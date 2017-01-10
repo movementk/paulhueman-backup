@@ -1,9 +1,10 @@
 @import 'common';
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+@import url('https://fonts.googleapis.com/earlyaccess/jejumyeongjo.css');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
 
 html {
     position: relative;
@@ -81,7 +82,14 @@ a {
 
 #header {
     .top-nav {
-        
+        height: 50px;
+        background-color: #3b3b3b;
+        .global {
+            a {
+                color: #fff;
+                font-size: 12px;
+            }
+        }
     }
     .logo-nav {
         position: relative;
@@ -95,30 +103,25 @@ a {
             }
         }
         .btn {
+            position: absolute;
+            top: 8px;
+            padding: 0;
+            width: 34px;
+            height: 34px;
             background-color: #fff;
             border: 0;
             box-shadow: none;
         }
         .btn-open-aside {
-            position: absolute;
             left: 3px;
-            top: 8px;
-            padding: 0;
-            width: 34px;
-            height: 34px;
             &:before {
                 font-family: 'fontello';
                 content: '\F008';
-                font-size: 18px;
+                font-size: 18px;    
             }
         }
         .btn-search {
-            position: absolute;
             right: 3px;
-            top: 8px;
-            padding: 0;
-            width: 34px;
-            height: 34px;
             &:before {
                 font-family: 'fontello';
                 font-size: 18px;
@@ -126,16 +129,53 @@ a {
             }
         }
         .btn-cart {
-            position: absolute;
             right: 34px;
-            top: 8px;
-            padding: 0;
-            width: 34px;
-            height: 34px;
             background-image: url('/assets/images/ico_basket.png');
             background-repeat: no-repeat;
             background-size: 20px auto;
             background-position: 50% 50%;
+        }
+        @media (min-width: $sm) {
+            height: 75px;
+            h1 {
+                padding-top: 17px;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 172px;
+                }
+            }
+            .btn {
+                top: 10px;
+                width: 54px;
+                height: 55px;
+            }
+            .btn-open-aside {
+                left: 5px;
+                &:before {
+                    font-size: 24px;
+                }
+            }
+            .btn-search {
+                right: 5px;
+                &:before {
+                    font-size: 24px;
+                }
+            }
+            .btn-cart {
+                right: 75px;
+                background-size: 27px auto;
+            }
+        }
+        @media (min-width: $lg) {
+            height: 115px;
+            h1 {
+                padding-top: 37px;
+                img {
+                    width: auto;
+                    max-width: 100%;
+                }
+            }
         }
     }
     #gnb {
@@ -143,32 +183,123 @@ a {
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
         text-align: center;
-        ul {
-            display: inline-block;
-            width: 300px;
-            li {
-                display: inline;
-                a {
-                    float: left;
-                    padding-left: 14px;
-                    padding-right: 14px;
-                    text-align: center;
-                    @include lato();
-                    line-height: 38px;
-                    font-size: 11px;
-                    font-weight: bold;
+        .container {
+            > ul {
+                display: inline-block;
+                width: 300px;
+                > li {
+                    display: inline;
+                    padding: 0;
+                    > a {
+                        float: left;
+                        padding-left: 14px;
+                        padding-right: 14px;
+                        text-align: center;
+                        @include lato();
+                        line-height: 38px;
+                        font-size: 11px;
+                        font-weight: bold;
+                    }
                 }
             }
         }
         @media (min-width: $sm) {
             height: 70px;
-            ul {
-                li {
-                    a {
-                        line-height: 68px;
+            .container {
+                > ul {
+                    width: 100%;
+                    > li {
+                        > a {
+                            display: block;
+                            float: none;
+                            padding-left: 0;
+                            padding-right: 0;
+                            width: 100%;
+                            height: 100%;
+                            line-height: 68px;
+                            font-size: 17px;
+                        }
                     }
                 }
             }
+        }
+        @media (min-width: $lg) {
+            height: 48px;
+            border-top: 0;
+            border-bottom: 0;
+            background-color: #eee;
+            .container {
+                > ul {
+                    > li {
+                        > a {
+                            line-height: 48px;
+                        }
+                        > ul {
+                            overflow: hidden;
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                            height: auto;
+                            background-color: #eee;
+                            > li {
+                                > a {
+                                    color: #666;
+                                    line-height: 35px;
+                                    font-size: 13px;
+                                    letter-spacing: 1px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#content {
+    min-height: 300px;
+}
+
+#footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @include maven();
+    @include font(12px, 18px);
+    color: #666;
+    .company {
+        p {
+            display: inline;
+        }
+        ul {
+            display: inline;
+            li {
+                display: inline;
+                &:before {
+                    display: inline-block;
+                    padding-left: 3px;
+                    padding-right: 5px;
+                    content: '|';
+                }
+            }
+        }
+    }
+    .policy {
+        margin-top: 15px;
+        ul {
+            li {
+                display: inline;
+                a {
+                    color: #666;
+                }
+                & + li {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    @media (min-width: $lg) {
+        .policy {
+            margin-top: 0;
         }
     }
 }
