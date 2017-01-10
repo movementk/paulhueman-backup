@@ -537,21 +537,24 @@ a {
     #header #gnb {
       height: 48px;
       border-top: 0;
-      border-bottom: 0;
-      background-color: #eee; }
+      border-bottom: 0; }
       #header #gnb .container > ul > li > a {
         line-height: 48px; }
       #header #gnb .container > ul > li > ul {
         overflow: hidden;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        height: auto;
-        background-color: #eee; }
+        height: 0;
+        background-color: #fff;
+        transition: all .3s; }
         #header #gnb .container > ul > li > ul > li > a {
+          display: block;
           color: #666;
           line-height: 35px;
           font-size: 13px;
-          letter-spacing: 1px; } }
+          letter-spacing: 1px; }
+      #header #gnb .container > ul > li.active > ul {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto; } }
 
 #content {
   min-height: 300px; }

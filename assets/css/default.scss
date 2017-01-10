@@ -227,7 +227,6 @@ a {
             height: 48px;
             border-top: 0;
             border-bottom: 0;
-            background-color: #eee;
             .container {
                 > ul {
                     > li {
@@ -236,17 +235,24 @@ a {
                         }
                         > ul {
                             overflow: hidden;
-                            padding-top: 20px;
-                            padding-bottom: 20px;
-                            height: auto;
-                            background-color: #eee;
+                            height: 0;
+                            background-color: #fff;
+                            transition: all .3s;
                             > li {
                                 > a {
+                                    display: block;
                                     color: #666;
                                     line-height: 35px;
                                     font-size: 13px;
                                     letter-spacing: 1px;
                                 }
+                            }
+                        }
+                        &.active {
+                            > ul {
+                                padding-top: 20px;
+                                padding-bottom: 20px;
+                                height: auto;
                             }
                         }
                     }
