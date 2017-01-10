@@ -433,23 +433,43 @@ a {
       display: block;
       margin: 0 auto;
       width: 110px; }
+  #header .logo-nav .btn {
+    background-color: #fff;
+    border: 0;
+    box-shadow: none; }
   #header .logo-nav .btn-open-aside {
     position: absolute;
     left: 3px;
     top: 8px;
     padding: 0;
     width: 34px;
-    height: 34px;
-    background-color: #fff;
-    border: 0;
-    box-shadow: none; }
+    height: 34px; }
     #header .logo-nav .btn-open-aside:before {
       font-family: 'fontello';
       content: '\F008';
       font-size: 18px; }
-  #header .logo-nav .btn-search:before {
-    font-family: 'fontello';
-    content: '\E801'; }
+  #header .logo-nav .btn-search {
+    position: absolute;
+    right: 3px;
+    top: 8px;
+    padding: 0;
+    width: 34px;
+    height: 34px; }
+    #header .logo-nav .btn-search:before {
+      font-family: 'fontello';
+      font-size: 18px;
+      content: '\E801'; }
+  #header .logo-nav .btn-cart {
+    position: absolute;
+    right: 34px;
+    top: 8px;
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    background-image: url("/assets/images/ico_basket.png");
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: 50% 50%; }
 #header #gnb {
   height: 40px;
   border-top: 1px solid #ccc;

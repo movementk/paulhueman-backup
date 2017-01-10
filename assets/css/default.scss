@@ -94,6 +94,11 @@ a {
                 width: 110px;
             }
         }
+        .btn {
+            background-color: #fff;
+            border: 0;
+            box-shadow: none;
+        }
         .btn-open-aside {
             position: absolute;
             left: 3px;
@@ -101,9 +106,6 @@ a {
             padding: 0;
             width: 34px;
             height: 34px;
-            background-color: #fff;
-            border: 0;
-            box-shadow: none;
             &:before {
                 font-family: 'fontello';
                 content: '\F008';
@@ -111,10 +113,29 @@ a {
             }
         }
         .btn-search {
+            position: absolute;
+            right: 3px;
+            top: 8px;
+            padding: 0;
+            width: 34px;
+            height: 34px;
             &:before {
                 font-family: 'fontello';
+                font-size: 18px;
                 content: '\E801';
             }
+        }
+        .btn-cart {
+            position: absolute;
+            right: 34px;
+            top: 8px;
+            padding: 0;
+            width: 34px;
+            height: 34px;
+            background-image: url('/assets/images/ico_basket.png');
+            background-repeat: no-repeat;
+            background-size: 20px auto;
+            background-position: 50% 50%;
         }
     }
     #gnb {
