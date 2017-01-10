@@ -13,10 +13,17 @@ html {
 
 body {
     position: relative;
+    margin-top: 90px;
     min-width: 320px;
     @include noto();
     font-size: 12px;
     color: #2b2b2b;
+    @media (min-width: $sm) {
+        margin-top: 145px;
+    }
+    @media (min-width: $lg) {
+        margin-top: 213px;
+    }
 }
 
 a {
@@ -81,13 +88,108 @@ a {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 320px;
+    background-color: #fff;
     .top-nav {
         height: 50px;
         background-color: #3b3b3b;
         .global {
-            a {
-                color: #fff;
-                font-size: 12px;
+            .dropdown {
+                .btn {
+                    padding: 0;
+                    border: 0;
+                    box-shadow: none;
+                    color: #fff;
+                    height: 50px;
+                    font-size: 12px;
+                    @include lato();
+                    font-weight: 400;
+                    background-color: transparent;
+                    &:after {
+                        margin-left: 15px;
+                        font-family: 'fontello';
+                        content: '\F107';
+                        text-decoration: none;
+                    }
+                    &:hover, &:focus {
+                        span {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                &.open {
+                    .btn {
+                        &:after {
+                            content: '\F106';
+                        }
+                    }
+                }
+            }
+        }
+        .mypage {
+            .dropdown {
+                .btn {
+                    padding: 0;
+                    border: 0;
+                    @include noto();
+                    color: #fff;
+                    @include font(12px, 50px);
+                    background-color: transparent;
+                }
+            }
+        }
+        .btn-cart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 0;
+            right: 185px;
+            background-image: url('/assets/images/ico_basket_white.png');
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            &:hover, &:focus {
+                background-color: rgba(#fff, .1);
+            }
+        }
+        .search {
+            position: absolute;
+            top: 15px;
+            right: 0;
+            padding-right: 20px;
+            width: 170px;
+            height: 20px;
+            .form-group {
+                .form-control {
+                    padding: 0;
+                    border: 0;
+                    border-bottom: 1px solid #fff;
+                    background-color: transparent;
+                    box-shadow: none;
+                    border-radius: 0;
+                    height: 20px;
+                    color: #fff;
+                    font-size: 12px;
+                    @include lato();
+                }
+            }
+            .btn-search {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0;
+                width: 20px;
+                height: 20px;
+                background-color: transparent;
+                text-align: right;
+                border: 0;
+                &:before {
+                    font-family: 'fontello';
+                    content: '\E801';
+                    color: #fff;
+                }
             }
         }
     }
@@ -189,7 +291,8 @@ a {
                 width: 300px;
                 > li {
                     display: inline;
-                    padding: 0;
+                    padding-left: 0;
+                    padding-right: 0;
                     > a {
                         float: left;
                         padding-left: 14px;
@@ -209,6 +312,8 @@ a {
                 > ul {
                     width: 100%;
                     > li {
+                        padding-left: 10px;
+                        padding-right: 10px;
                         > a {
                             display: block;
                             float: none;
@@ -230,13 +335,19 @@ a {
             .container {
                 > ul {
                     > li {
+                        padding-left: 15px;
+                        padding-right: 15px;
                         > a {
                             line-height: 48px;
                         }
                         > ul {
+                            position: relative;
+                            top: -20px;
                             overflow: hidden;
-                            height: 0;
+                            padding-top: 20px;
+                            padding-bottom: 20px;
                             background-color: #fff;
+                            opacity: 0;
                             transition: all .3s;
                             > li {
                                 > a {
@@ -250,9 +361,8 @@ a {
                         }
                         &.active {
                             > ul {
-                                padding-top: 20px;
-                                padding-bottom: 20px;
-                                height: auto;
+                                top: 0;
+                                opacity: 1;
                             }
                         }
                     }
@@ -263,7 +373,8 @@ a {
 }
 
 #content {
-    min-height: 300px;
+    min-height: 3000px;
+    background-color: skyblue;
 }
 
 #footer {

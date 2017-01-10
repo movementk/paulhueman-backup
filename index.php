@@ -20,19 +20,39 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <div class="global">
-                            <a href="#">GLOBAL SHIPPING</a>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="global-site" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <span>GLOBAL SHIPPING</span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="global-site">
+                                    <li><a href="#">ENG</a></li>
+                                    <li><a href="#">CHN</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xs-6">
-                        <div class="">
-                            마이페이지
+                        <div class="mypage">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="mypage-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    마이페이지
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="global-site">
+                                    <ul>
+                                        <li><a href="#">ENG</a></li>
+                                        <li><a href="#">CHN</a></li>
+                                    </ul>
+                                    <a class="btn-login" href="#">로그인</a>
+                                </div>
+                            </div>
                         </div>
-                        <a href=""></a>
+                        <a class="btn-cart" href="#"><span class="sr-only">장바구니</span></a>
                         <div class="search">
                             <form action="#">
-                                <label>
-                                    <input type=
-                                </label>
+                                <div class="form-group">
+                                    <label class="sr-only" for="global-search-keyword">검색하기</label>
+                                    <input class="form-control" id="global-search-keyword" type="input" placeholder="Search">
+                                </div>
                                 <button class="btn btn-search" type="submit"><span class="sr-only">검색</span></button>
                             </form>
                         </div>
