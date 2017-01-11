@@ -21,8 +21,6 @@ address {
   margin-bottom: 0; }
 
 /* 메인페이지 완료되면 Header CSS 제거 */
-.sub #header #gnb ul li ul {
-  display: none !important; }
 .sub #content {
   min-height: 500px; }
   .sub #content .container {
@@ -32,6 +30,18 @@ address {
     #header #gnb ul li ul 만 제거 
     이하로 작성되는 scss는 사용 2017-01-10
 */
+label {
+  font-size: 11px;
+  color: #666;
+  font-weight: 300;
+  margin: 0; }
+  @media (min-width: 768px) {
+    label {
+      font-size: 13px; } }
+
+input[type=checkbox] {
+  margin: 0; }
+
 .sub-title {
   font-size: 20px;
   color: cornflowerblue;
@@ -96,19 +106,20 @@ address {
     text-align: center;
     border: 1px solid #dbdbdb;
     border-right: 0;
-    padding: 17px 0 20px;
-    font-family: 'Lato', sans-serif; }
+    padding: 17px 0 20px; }
     .join-step ol li > p {
       margin-bottom: 13px; }
     .join-step ol li > h3 {
       font-size: 12px;
-      color: #999; }
+      color: #999;
+      font-weight: 400; }
       .join-step ol li > h3 > i {
         font-size: 12px;
         color: #999;
         display: block;
         font-style: normal;
-        margin-bottom: 6px; }
+        margin-bottom: 6px;
+        font-family: 'Lato', sans-serif; }
     .join-step ol li:last-child {
       border-right: 1px solid #dbdbdb; }
     .join-step ol li.active {
@@ -270,5 +281,72 @@ address {
   padding: 26px 20px;
   border: 1px solid #dfdfdf;
   background-color: #f4f4f4; }
+.terms .form-group {
+  padding-top: 20px;
+  margin-bottom: 0; }
+  .terms .form-group .check input[type=checkbox] {
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 10px; }
+@media (min-width: 768px) {
+  .terms > h3 {
+    font-size: 13px;
+    margin-bottom: 20px; }
+  .terms .summary {
+    font-size: 13px;
+    line-height: 24px; } }
+@media (min-width: 992px) {
+  .terms > h3 {
+    font-size: 14px; }
+  .terms .summary {
+    font-size: 14px;
+    line-height: 28px; } }
+
+/* select-form */
+.select-form .select-header .select-menu {
+  overflow: hidden; }
+  .select-form .select-header .select-menu li {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 47px;
+    background-color: #f5f5f5;
+    border: 1px solid #e2e2e2;
+    border-bottom: 0; }
+    .select-form .select-header .select-menu li a {
+      font-size: 11px;
+      color: #acacac;
+      display: block;
+      text-align: center;
+      line-height: 47px; }
+    .select-form .select-header .select-menu li.active {
+      border: 1px solid #000;
+      border-bottom: 1px solid #fff;
+      background-color: #fff; }
+      .select-form .select-header .select-menu li.active a {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        color: #2b2b2b;
+        background-color: #fff; }
+    .select-form .select-header .select-menu li:first-child {
+      border-right: 0;
+      border-bottom: 1px solid #000; }
+      .select-form .select-header .select-menu li:first-child.active {
+        border-right: 1px solid #000; }
+    .select-form .select-header .select-menu li:last-child {
+      border-left: 0;
+      border-bottom: 1px solid #000; }
+      .select-form .select-header .select-menu li:last-child.active {
+        border-left: 1px solid #000; }
+.select-form .select-content {
+  display: block;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #000;
+  border-top: 0; }
+@media (min-width: 768px) {
+  .select-form .select-header .select-menu li a {
+    font-size: 13px; } }
 
 /*# sourceMappingURL=sub.css.map */
