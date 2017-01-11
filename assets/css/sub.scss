@@ -14,7 +14,7 @@
         }
     }
     #content {
-        min-height: 500px;
+        background-color: #fff;
         .container {
             min-height: 500px;
         }
@@ -97,6 +97,7 @@ input[type=checkbox] {
         }
         @media(min-width: $lg) {
             margin-bottom: 60px;
+            border-top: 1px solid #ccc;
             border-bottom: 1px solid #ccc;
         }
     }
