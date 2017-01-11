@@ -98,6 +98,7 @@ a {
         background-color: #3b3b3b;
         .global {
             .dropdown {
+                width: 130px;
                 .btn {
                     padding: 0;
                     border: 0;
@@ -130,14 +131,59 @@ a {
             }
         }
         .mypage {
+            position: absolute;
+            top: 0;
+            right: 235px;
             .dropdown {
                 .btn {
                     padding: 0;
+                    padding-left: 10px;
+                    padding-right: 10px;
                     border: 0;
                     @include noto();
                     color: #fff;
                     @include font(12px, 50px);
                     background-color: transparent;
+                    &:focus, &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .dropdown-menu {
+                    left: -20px;
+                    margin-top: 0;
+                    padding: 5px 30px 20px;
+                    width: 230px;
+                    background-color: #3b3b3b;
+                    border-radius: 0;
+                    border: 0;
+                    box-shadow: none;
+                    > ul {
+                        > li {
+                            > a {
+                                @include lato();
+                                @include font(11px, 23px);
+                                color: #fff;
+                                &:hover, &:focus {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    > .btn-login {
+                        display: block;
+                        margin-top: 20px;
+                        width: 100%;
+                        height: 25px;
+                        @include lato();
+                        @include font(11px, 23px);
+                        border: 1px solid #fff;
+                        color: #fff;
+                        text-align: center;
+                        &:hover, &:focus {
+                            background-color: #fff;
+                            color: #3b3b3b;
+                        }
+                    }
                 }
             }
         }
@@ -341,14 +387,13 @@ a {
                             line-height: 48px;
                         }
                         > ul {
+                            height: 0;
                             position: relative;
-                            top: -20px;
                             overflow: hidden;
-                            padding-top: 20px;
-                            padding-bottom: 20px;
                             background-color: #fff;
                             opacity: 0;
                             transition: all .3s;
+                            z-index: -1;
                             > li {
                                 > a {
                                     display: block;
@@ -356,13 +401,19 @@ a {
                                     line-height: 35px;
                                     font-size: 13px;
                                     letter-spacing: 1px;
+                                    &:hover, &:focus {
+                                        text-decoration: underline;
+                                    }
                                 }
                             }
                         }
                         &.active {
                             > ul {
-                                top: 0;
+                                padding-top: 20px;
+                                padding-bottom: 20px;
+                                height: auto;
                                 opacity: 1;
+                                z-index: 1;
                             }
                         }
                     }
@@ -373,7 +424,7 @@ a {
 }
 
 #content {
-    min-height: 3000px;
+    min-height: 300px;
     background-color: skyblue;
 }
 

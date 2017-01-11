@@ -22,51 +22,29 @@ address {
 
 /* 메인페이지 완료되면 Header CSS 제거 */
 .sub #header #gnb ul li ul {
-  display: none; }
+  display: none !important; }
 .sub #content {
-  min-height: 500px;
-  background-color: antiquewhite; }
+  min-height: 500px; }
   .sub #content .container {
-    min-height: 500px;
-    background-color: #fff; }
-.sub #footer {
-  width: 100%;
-  height: 100px;
-  background-color: hotpink; }
-  @media (min-width: 768px) {
-    .sub #footer {
-      height: 200px; } }
-  .sub #footer .container {
-    height: 100px;
-    background-color: lightpink; }
-    @media (min-width: 768px) {
-      .sub #footer .container {
-        height: 200px; } }
-    .sub #footer .container p {
-      font-size: 18px;
-      color: #fff;
-      text-align: center;
-      line-height: 100px; }
-      @media (min-width: 768px) {
-        .sub #footer .container p {
-          font-size: 25px;
-          line-height: 200px; } }
-      @media (min-width: 992px) {
-        .sub #footer .container p {
-          font-size: 30px; } }
-      @media (min-width: 1280px) {
-        .sub #footer .container p {
-          font-size: 35px; } }
+    min-height: 500px; }
 
 /* 
     #header #gnb ul li ul 만 제거 
     이하로 작성되는 scss는 사용 2017-01-10
 */
+.sub-title {
+  font-size: 20px;
+  color: cornflowerblue;
+  font-weight: 400;
+  margin: 30px 0 15px; }
+
 /* page-path */
 .page-path .breadcrumb {
   padding: 14px 0 14px;
+  margin-bottom: 0;
   border-radius: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-bottom: 38px; }
   .page-path .breadcrumb li {
     font-size: 10px;
     color: #ccc;
@@ -100,7 +78,116 @@ address {
             font-size: 11px; } }
   @media (min-width: 992px) {
     .page-path .breadcrumb {
+      margin-bottom: 82px; } }
+  @media (min-width: 1280px) {
+    .page-path .breadcrumb {
+      margin-bottom: 60px;
       border-bottom: 1px solid #ccc; } }
+
+/* join-step */
+.join-step ol {
+  font-size: 0;
+  text-align: center; }
+  .join-step ol li {
+    display: inline-block;
+    width: 33.33%;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    border-right: 0;
+    padding: 17px 0 20px;
+    font-family: 'Lato', sans-serif; }
+    .join-step ol li > p {
+      margin-bottom: 13px; }
+    .join-step ol li > h3 {
+      font-size: 12px;
+      color: #999; }
+      .join-step ol li > h3 > i {
+        font-size: 12px;
+        color: #999;
+        display: block;
+        font-style: normal;
+        margin-bottom: 6px; }
+    .join-step ol li:last-child {
+      border-right: 1px solid #dbdbdb; }
+    .join-step ol li.active {
+      border-color: #2b2b2b;
+      background-color: #2b2b2b; }
+      .join-step ol li.active > h3 {
+        color: #fff; }
+        .join-step ol li.active > h3 > i {
+          color: #fff; }
+@media (min-width: 768px) {
+  .join-step ol li {
+    padding: 15px 0; }
+    .join-step ol li > p {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 20px; }
+    .join-step ol li > h3 {
+      display: inline-block;
+      font-size: 13px; }
+      .join-step ol li > h3 > i {
+        display: inline-block;
+        font-size: 13px;
+        margin-right: 20px;
+        margin-bottom: 0; } }
+@media (min-width: 992px) {
+  .join-step ol li.active {
+    border-color: #dbdbdb; } }
+
+/* btn-area */
+.btn-area p {
+  font-size: 0;
+  text-align: center; }
+  .btn-area p .btn {
+    display: inline-block;
+    padding: 0;
+    border-radius: 0; }
+  .btn-area p .btn-lg {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 35px;
+    font-size: 12px;
+    color: #666;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #aaa; }
+    @media (min-width: 768px) {
+      .btn-area p .btn-lg {
+        height: 40px;
+        line-height: 40px; } }
+    @media (min-width: 992px) {
+      .btn-area p .btn-lg {
+        width: 370px;
+        font-size: 13px; } }
+  .btn-area p .btn-sucess {
+    display: block;
+    margin: 0 auto; }
+  .btn-area p .btn-sm {
+    width: 145px;
+    height: 40px;
+    font-size: 11px;
+    color: #666;
+    line-height: 40px;
+    margin-right: 10px; }
+    .btn-area p .btn-sm:last-child {
+      margin-right: 0; }
+    @media (min-width: 768px) {
+      .btn-area p .btn-sm {
+        margin-right: 20px; } }
+    @media (min-width: 992px) {
+      .btn-area p .btn-sm {
+        width: 172px;
+        font-size: 12px; } }
+  .btn-area p .btn-white {
+    border: 1px solid #ccc; }
+  .btn-area p .btn-gray {
+    color: #fff;
+    border-color: #2b2b2b;
+    background-color: #2b2b2b; }
 
 /* glasses-item */
 .glasses-item .tab-menu h2 {
@@ -110,10 +197,11 @@ address {
   font-weight: bold;
   margin-bottom: 20px; }
 .glasses-item .tab-menu ul {
+  font-size: 0;
   text-align: center; }
   .glasses-item .tab-menu ul li {
     display: inline-block;
-    margin-right: 8px; }
+    margin-right: 10px; }
     .glasses-item .tab-menu ul li a {
       display: block;
       width: 140px;
@@ -132,7 +220,7 @@ address {
       margin-right: 0; }
   @media (min-width: 768px) {
     .glasses-item .tab-menu ul li {
-      margin-right: 18px; }
+      margin-right: 20px; }
       .glasses-item .tab-menu ul li a {
         font-size: 12px;
         width: 166px;
@@ -156,23 +244,31 @@ address {
           color: #2b2b2b;
           background-color: #fff;
           border-bottom: 2px solid #aaa; } }
-@media (min-width: 1280px) {
-  .glasses-item {
-    padding-top: 60px; } }
-.glasses-item .item-list > div > div:nth-of-type(1) .item {
-  background-color: greenyellow; }
-.glasses-item .item-list > div > div:nth-of-type(2) .item {
-  background-color: yellow; }
-.glasses-item .item-list > div > div:nth-of-type(3) .item {
-  background-color: yellowgreen; }
-.glasses-item .item-list > div > div:nth-of-type(4) .item {
-  background-color: azure; }
-.glasses-item .item-list > div > div:nth-of-type(5) .item {
-  background-color: beige; }
-.glasses-item .item-list > div > div:nth-of-type(6) .item {
-  background-color: bisque; }
-.glasses-item .item-list > div > div .item {
-  height: 130px;
-  margin-bottom: 20px; }
+.glasses-item .item-list {
+  margin-top: 80px; }
+  .glasses-item .item-list .item {
+    height: 130px;
+    text-align: center;
+    margin-bottom: 80px;
+    border: 1px solid #ccc; }
+  @media (min-width: 1280px) {
+    .glasses-item .item-list {
+      margin-top: 0; } }
+
+/* terms */
+.terms > h3 {
+  font-size: 12px;
+  color: #222;
+  margin-bottom: 10px; }
+.terms .summary {
+  overflow-y: scroll;
+  width: 100%;
+  min-height: 350px;
+  font-size: 13px;
+  color: #666;
+  line-height: 20px;
+  padding: 26px 20px;
+  border: 1px solid #dfdfdf;
+  background-color: #f4f4f4; }
 
 /*# sourceMappingURL=sub.css.map */

@@ -444,33 +444,73 @@ a {
   #header .top-nav {
     height: 50px;
     background-color: #3b3b3b; }
-    #header .top-nav .global .dropdown .btn {
-      padding: 0;
-      border: 0;
-      box-shadow: none;
-      color: #fff;
-      height: 50px;
-      font-size: 12px;
-      font-family: 'Lato', sans-serif;
-      font-weight: 400;
-      background-color: transparent; }
-      #header .top-nav .global .dropdown .btn:after {
-        margin-left: 15px;
-        font-family: 'fontello';
-        content: '\F107';
-        text-decoration: none; }
-      #header .top-nav .global .dropdown .btn:hover span, #header .top-nav .global .dropdown .btn:focus span {
-        text-decoration: underline; }
-    #header .top-nav .global .dropdown.open .btn:after {
-      content: '\F106'; }
-    #header .top-nav .mypage .dropdown .btn {
-      padding: 0;
-      border: 0;
-      font-family: 'Noto Sans KR', sans-serif;
-      color: #fff;
-      font-size: 12px;
-      line-height: 50px;
-      background-color: transparent; }
+    #header .top-nav .global .dropdown {
+      width: 130px; }
+      #header .top-nav .global .dropdown .btn {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        color: #fff;
+        height: 50px;
+        font-size: 12px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        background-color: transparent; }
+        #header .top-nav .global .dropdown .btn:after {
+          margin-left: 15px;
+          font-family: 'fontello';
+          content: '\F107';
+          text-decoration: none; }
+        #header .top-nav .global .dropdown .btn:hover span, #header .top-nav .global .dropdown .btn:focus span {
+          text-decoration: underline; }
+      #header .top-nav .global .dropdown.open .btn:after {
+        content: '\F106'; }
+    #header .top-nav .mypage {
+      position: absolute;
+      top: 0;
+      right: 235px; }
+      #header .top-nav .mypage .dropdown .btn {
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #fff;
+        font-size: 12px;
+        line-height: 50px;
+        background-color: transparent; }
+        #header .top-nav .mypage .dropdown .btn:focus, #header .top-nav .mypage .dropdown .btn:hover {
+          text-decoration: underline; }
+      #header .top-nav .mypage .dropdown .dropdown-menu {
+        left: -20px;
+        margin-top: 0;
+        padding: 5px 30px 20px;
+        width: 230px;
+        background-color: #3b3b3b;
+        border-radius: 0;
+        border: 0;
+        box-shadow: none; }
+        #header .top-nav .mypage .dropdown .dropdown-menu > ul > li > a {
+          font-family: 'Lato', sans-serif;
+          font-size: 11px;
+          line-height: 23px;
+          color: #fff; }
+          #header .top-nav .mypage .dropdown .dropdown-menu > ul > li > a:hover, #header .top-nav .mypage .dropdown .dropdown-menu > ul > li > a:focus {
+            text-decoration: underline; }
+        #header .top-nav .mypage .dropdown .dropdown-menu > .btn-login {
+          display: block;
+          margin-top: 20px;
+          width: 100%;
+          height: 25px;
+          font-family: 'Lato', sans-serif;
+          font-size: 11px;
+          line-height: 23px;
+          border: 1px solid #fff;
+          color: #fff;
+          text-align: center; }
+          #header .top-nav .mypage .dropdown .dropdown-menu > .btn-login:hover, #header .top-nav .mypage .dropdown .dropdown-menu > .btn-login:focus {
+            background-color: #fff;
+            color: #3b3b3b; }
     #header .top-nav .btn-cart {
       position: absolute;
       width: 50px;
@@ -631,26 +671,30 @@ a {
           #header #gnb .container > ul > li > a {
             line-height: 48px; }
           #header #gnb .container > ul > li > ul {
+            height: 0;
             position: relative;
-            top: -20px;
             overflow: hidden;
-            padding-top: 20px;
-            padding-bottom: 20px;
             background-color: #fff;
             opacity: 0;
-            transition: all .3s; }
+            transition: all .3s;
+            z-index: -1; }
             #header #gnb .container > ul > li > ul > li > a {
               display: block;
               color: #666;
               line-height: 35px;
               font-size: 13px;
               letter-spacing: 1px; }
+              #header #gnb .container > ul > li > ul > li > a:hover, #header #gnb .container > ul > li > ul > li > a:focus {
+                text-decoration: underline; }
           #header #gnb .container > ul > li.active > ul {
-            top: 0;
-            opacity: 1; } }
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: auto;
+            opacity: 1;
+            z-index: 1; } }
 
 #content {
-  min-height: 3000px;
+  min-height: 300px;
   background-color: skyblue; }
 
 #footer {

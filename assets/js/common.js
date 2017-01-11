@@ -9,4 +9,12 @@
         $(this).removeClass('active');
     });
     
+    // 탑메뉴 관련
+    $(document).on('mouseenter', '#header .top-nav .dropdown', function() {
+        $(this).find('[data-toggle="dropdown"]').dropdown('toggle');
+    });
+    $(document).on('mouseleave', '#header .top-nav .dropdown', function() {
+        $(this).find('[data-toggle="dropdown"]').dropdown('toggle');
+    });
+    
 })(jQuery);
