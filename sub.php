@@ -31,10 +31,7 @@
                         </div>
                         <a href=""></a>
                         <div class="search">
-                            <form action="#">
-                                <label>
-                                    <input type=
-                                </label>
+                            <form>
                                 <button class="btn btn-search" type="submit"><span class="sr-only">검색</span></button>
                             </form>
                         </div>
@@ -46,14 +43,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-4 hidden-lg">
-                        <button type="buton" class="btn btn-open-aside"><span class="sr-only">네비버튼</span></button>
+                        <button type="button" class="btn btn-open-aside">
+                            <span class="sr-only">네비버튼</span>
+                        </button>
                     </div>
                     <div class="col-xs-4 col-lg-4 col-lg-offset-4">
                         <h1><a href="/"><img src="/assets/images/logo.gif" alt="Paul Hueman PARIS"></a></h1>
                     </div>
                     <div class="col-xs-4 hidden-lg">
                         <a href="#" class="btn btn-cart"><span class="sr-only">장바구니</span></a>
-                        <button type="buton" class="btn btn-search"><span class="sr-only">검색</span></button>
+                        <button type="button" class="btn btn-search"><span class="sr-only">검색</span></button>
                     </div>
                 </div>
             </div>
@@ -134,7 +133,7 @@
             
             <!-- button list -->
             <div style="margin: 30px 0;">
-                <h6 class="sub-title">버튼 리스트</h6>
+                <h6 class="sub-title">버튼</h6>
                 <div class="btn-area">
                     <p>
                         <a href="#" class="btn btn-lg btn-white" role="button">제품더보기</a>
@@ -217,6 +216,22 @@
                 </div>
             </div>
             
+            <!-- member-form -->
+            <div style="margin: 30px 0;">
+               <h6 class="sub-title">회원 및 비회원 아이디 및 비번 찾기 폼</h6>
+                <div class="select-form">
+                    <div class="select-header">
+                        <ul class="select-menu">
+                            <li class="active"><a href="#">회원</a></li>
+                            <li><a href="#">비회원 (주문 및 주문조회)</a></li>
+                        </ul>
+                    </div>
+                    <div class="select-content">
+                        content 내용입력
+                    </div>
+                </div>
+            </div>
+            
         </div><!--// Container -->
     </main><!--// Main Content -->
     
@@ -246,5 +261,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/common.js"></script>
 </body>
 </html>
