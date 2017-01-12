@@ -9,6 +9,11 @@
 html {
     position: relative;
     min-width: 320px;
+    &.aside-open {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 body {
@@ -18,6 +23,11 @@ body {
     @include noto();
     font-size: 12px;
     color: #2b2b2b;
+    &.aside-open {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
     @media (min-width: $sm) {
         margin-top: 145px;
     }
@@ -90,6 +100,7 @@ a {
 #header {
     position: fixed;
     top: 0;
+    z-index: 1;
     width: 100%;
     min-width: 320px;
     background-color: #fff;
@@ -423,8 +434,181 @@ a {
     }
 }
 
+#aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, .7);
+    z-index: 9999;
+    .aside-content {
+        position: relative;
+        padding-top: 56px;
+        padding-bottom: 60px;
+        width: 280px;
+        height: 100%;
+        background-color: #fff;
+        .btn-aside-close {
+            position: absolute;
+            top: 18px;
+            right: 10px;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+            z-index: 1;
+            &:before {
+                content: url(/assets/images/ico_close.png);
+            }
+        }
+        .aside-head {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 56px;
+            border-bottom: 1px solid #ccc;
+            @include lato();
+            @include font(12px, 36px);
+            letter-spacing: 1px;
+            color: #2b2b2b;
+            .member {
+                padding: 10px;
+                ul {
+                    li {
+                        float: left;
+                        & + li {
+                            margin-left: 20px;
+                        }
+                        a {
+                            display: block;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+        .aside-body {
+            position: relative;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            height: 100%;
+            overflow: auto;
+            @include lato();
+            @include font(12px, 40px);
+            letter-spacing: 1px;
+            color: #2b2b2b;
+            .nav {
+                > ul {
+                    > li {
+                        > a {
+                            display: block;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            font-weight: bold;
+                        }
+                        > ul {
+                            display: none;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                            > li {
+                                > a {
+                                    display: block;
+                                    padding-left: 30px;
+                                    padding-right: 10px;
+                                    line-height: 30px;
+                                    &:hover, &:focus {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                        &.active {
+                            > ul {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .aside-foot {
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            width: 100%;
+            height: 45px;
+            .global {
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding: 10px;
+                .btn {
+                    padding: 0;
+                    height: 25px;
+                    background-color: #fff;
+                    @include lato();
+                    @include font(12px, 25px);
+                    color: #666;
+                    border-radius: 0;
+                    box-shadow: none;
+                    &:after {
+                        margin-left: 10px;
+                        font-family: 'fontello';
+                        content: '\F106';
+                    }
+                }
+            }
+            .sns {
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                ul {
+                    li {
+                        float: left;
+                        a {
+                            display: block;
+                            width: 35px;
+                            height: 35px;
+                            line-height: 35px;
+                            text-align: center;
+                            font-size: 15px;
+                        }
+                        &.instagram {
+                            a {
+                                &:before {
+                                    font-family: 'fontello';
+                                    content: '\F16D';
+                                }
+                            }
+                        }
+                        &.blog {
+                            a {
+                                &:before {
+                                    content: url(/assets/images/ico_blog.svg);
+                                }
+                            }
+                        }
+                        &.facebook {
+                            a {
+                                &:before {
+                                    font-family: 'fontello';
+                                    content: '\F09A';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 #content {
-    min-height: 300px;
+    min-height: 3000px;
     background-color: skyblue;
 }
 
