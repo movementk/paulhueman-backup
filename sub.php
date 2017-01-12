@@ -4,10 +4,7 @@
 <body class="sub">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     
-    
     <aside id="aside" class="hidden-lg"></aside>
-    
-    
     
     <main id="content">
         <div class="container">
@@ -21,9 +18,9 @@
             </div>
             
             <!-- join step -->
-            <div class="join-step">
+            <div style="margin: 30px 0;">
                 <h6 class="sub-title">회원가입 절차</h6>
-                <ol>
+                <ol class="step-list">
                     <li class="active">
                         <p><img src="/assets/images/sub/step01_ico_active.png" alt="회원약관동의"></p>
                         <h3><i>STEP 01</i>회원약관동의</h3>
@@ -59,11 +56,11 @@
             </div>
             
             <!-- product list -->
-            <div class="glasses-item">
+            <div style="margin: 30px 0;">
                 <h6 class="sub-title">상품 리스트</h6>
                 <div class="row">
                     <div class="col-xs-12 col-lg-2">
-                        <div class="tab-menu">
+                        <div class="lnb">
                             <h2 class="visible-lg">SHOP</h2>
                             <ul>
                                 <li class="active"><a href="#">SUNGLASSES</a></li>
@@ -72,36 +69,36 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-10">
-                        <div class="item-list">
+                        <div class="glasses-list">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="item">
-                                        item-1
+                                    <div class="glasses">
+                                        glasses-1
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="item">
-                                        item-2
+                                    <div class="glasses">
+                                        glasses-2
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="item">
-                                        item-3
+                                    <div class="glasses">
+                                        glasses-3
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="item">
-                                        item-4
+                                    <div class="glasses">
+                                        glasses-4
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="item">
-                                        item-5
+                                    <div class="glasses">
+                                        glasses-5
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="item">
-                                        item-6
+                                    <div class="glasses">
+                                        glasses-6
                                     </div>
                                 </div>
                             </div>
@@ -124,19 +121,15 @@
                 </div>
             </div>
             
-            <!-- member-form -->
+            <!-- nav-tabs -->
             <div style="margin: 30px 0;">
-               <h6 class="sub-title">회원 및 비회원 아이디 및 비번 찾기 폼</h6>
-                <div class="select-form">
-                    <div class="select-header">
-                        <ul class="select-menu">
-                            <li class="active"><a href="#">회원</a></li>
-                            <li><a href="#">비회원 (주문 및 주문조회)</a></li>
-                        </ul>
-                    </div>
-                    <div class="select-content">
-                        content 내용입력
-                    </div>
+                <h6 class="sub-title">회원 및 비회원 아이디 및 비번 찾기 폼</h6>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#">회원</a></li>
+                    <li><a href="#">비회원 (주문 및 주문조회)</a></li>
+                </ul>
+                <div class="tab-content">
+                    content 내용입력
                 </div>
             </div>
             
