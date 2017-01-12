@@ -3,9 +3,7 @@
 </head>
 <body class="sub">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
-    
-    <aside id="aside" class="hidden-lg"></aside>
-    
+    <!--?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/aside.php'); ?-->
     <main id="content">
         <div class="container">
             <!-- page-path -->
@@ -72,32 +70,32 @@
                         <div class="glasses-list">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses">
+                                    <div class="glasses-item">
                                         glasses-1
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses">
+                                    <div class="glasses-item">
                                         glasses-2
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses">
+                                    <div class="glasses-item">
                                         glasses-3
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses">
+                                    <div class="glasses-item">
                                         glasses-4
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses">
+                                    <div class="glasses-item">
                                         glasses-5
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses">
+                                    <div class="glasses-item">
                                         glasses-6
                                     </div>
                                 </div>
