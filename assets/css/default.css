@@ -31,6 +31,11 @@ html {
     overflow: hidden;
     width: 100%;
     height: 100%; }
+  @media (min-width: 1280px) {
+    html.aside-open {
+      overflow: auto;
+      width: auto;
+      height: auto; } }
 
 body {
   position: relative;
@@ -39,10 +44,6 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 12px;
   color: #2b2b2b; }
-  body.aside-open {
-    overflow: hidden;
-    width: 100%;
-    height: 100%; }
   @media (min-width: 768px) {
     body {
       margin-top: 145px; } }
@@ -581,9 +582,9 @@ a {
       background-color: #fff;
       border: 0;
       box-shadow: none; }
-    #header .logo-nav .btn-open-aside {
+    #header .logo-nav .btn-aside-open {
       left: 3px; }
-      #header .logo-nav .btn-open-aside:before {
+      #header .logo-nav .btn-aside-open:before {
         font-family: 'fontello';
         content: '\F008';
         font-size: 18px; }
@@ -612,9 +613,9 @@ a {
           top: 10px;
           width: 54px;
           height: 55px; }
-        #header .logo-nav .btn-open-aside {
+        #header .logo-nav .btn-aside-open {
           left: 5px; }
-          #header .logo-nav .btn-open-aside:before {
+          #header .logo-nav .btn-aside-open:before {
             font-size: 24px; }
         #header .logo-nav .btn-search {
           right: 5px; }
@@ -703,20 +704,24 @@ a {
             z-index: 1; } }
 
 #aside {
+  visibility: hidden;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 9999; }
   #aside .aside-content {
-    position: relative;
+    position: absolute;
+    left: -280px;
     padding-top: 56px;
     padding-bottom: 60px;
     width: 280px;
     height: 100%;
-    background-color: #fff; }
+    background-color: #fff;
+    -webkit-transition: left .3s;
+    transition: left .3s; }
     #aside .aside-content .btn-aside-close {
       position: absolute;
       top: 18px;
@@ -800,7 +805,8 @@ a {
           line-height: 25px;
           color: #666;
           border-radius: 0;
-          box-shadow: none; }
+          box-shadow: none;
+          border: 0; }
           #aside .aside-content .aside-foot .global .btn:after {
             margin-left: 10px;
             font-family: 'fontello';
@@ -822,10 +828,50 @@ a {
             font-family: 'fontello';
             content: '\F16D'; }
           #aside .aside-content .aside-foot .sns ul li.blog a:before {
+            display: block;
+            margin: 0 auto;
+            width: 10px;
             content: url(/assets/images/ico_blog.svg); }
           #aside .aside-content .aside-foot .sns ul li.facebook a:before {
             font-family: 'fontello';
             content: '\F09A'; }
+  @media (min-width: 768px) {
+    #aside .aside-content {
+      left: -330px;
+      width: 330px; }
+      #aside .aside-content .btn-aside-close {
+        right: 20px; }
+      #aside .aside-content .aside-head .member {
+        padding-left: 20px;
+        padding-right: 20px; }
+        #aside .aside-content .aside-head .member ul li + li {
+          margin-left: 30px; }
+      #aside .aside-content .aside-body .nav > ul > li > a {
+        padding-left: 20px;
+        padding-right: 20px; }
+      #aside .aside-content .aside-body .nav > ul > li > ul > li > a {
+        padding-left: 40px;
+        padding-right: 20px; }
+      #aside .aside-content .aside-foot .global {
+        padding-left: 20px;
+        padding-right: 20px; }
+      #aside .aside-content .aside-foot .sns ul li a {
+        width: 45px; } }
+
+body.aside-open {
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+  body.aside-open #aside {
+    visibility: visible;
+    left: 0; }
+    body.aside-open #aside .aside-content {
+      left: 0; }
+  @media (min-width: 1280px) {
+    body.aside-open {
+      overflow: auto;
+      width: auto;
+      height: auto; } }
 
 #content {
   min-height: 3000px;

@@ -48,7 +48,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-4 hidden-lg">
-                    <button type="buton" class="btn btn-open-aside"><span class="sr-only">네비버튼</span></button>
+                    <button type="buton" class="btn btn-aside-open"><span class="sr-only">네비버튼</span></button>
                 </div>
                 <div class="col-xs-4 col-lg-4 col-lg-offset-4">
                     <h1><a href="/"><img src="/assets/images/logo.gif" alt="Paul Hueman PARIS"></a></h1>

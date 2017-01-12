@@ -27,5 +27,18 @@
         }
         e.preventDefault();
     });
+    $(document).on('click', '#header .btn-aside-open', function() {
+        $('html, body').toggleClass('aside-open');
+        $('#aside .btn-aside-close').focus();
+    });
+    $(document).on('click', '#aside .btn-aside-close', function() {
+        $('html, body').toggleClass('aside-open');
+        $('#header .btn-aside-open').focus();
+    });
+    $(document).on('click', '#aside', function(e) {
+        if ($(e.target).attr('id') == 'aside') {
+            $('#aside .btn-aside-close').trigger('click');
+        }
+    });
     
 })(jQuery);
