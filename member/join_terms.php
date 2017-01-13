@@ -4,7 +4,7 @@
 </head>
 <body class="sub member">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
-    <!--?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/aside.php'); ?-->
+    <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/aside.php'); ?>
     <main id="content" class="join-terms">
         <div class="container">
             <!-- page-path -->

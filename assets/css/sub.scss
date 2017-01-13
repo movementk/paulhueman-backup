@@ -407,12 +407,66 @@ input[type=radio] {
     }
 }
 .glasses-list {
-    margin-top: 80px;
+    margin-top: 30px;
     .glasses-item {
-        height: 130px;
         text-align: center;
         margin-bottom: 80px;
-        border: 1px solid #ccc;
+//        border: 1px solid #ccc;
+        .bx-wrapper {
+            position: relative;
+            .bx-viewport {
+                ul {
+                    li {
+                        a {
+                            display: block;
+                            height: 180px;
+                            line-height: 180px;
+                            background: none;
+//                            transition: background .1s ease;
+                            img {
+                                display: inline-block;
+                            }
+                            &:hover {
+                                display: block;
+                                background-image: url(/assets/images/sub/item_img02.jpg);
+                                background-repeat: no-repeat;
+                                background-position: 50% 50%;
+                                img {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .bx-controls {
+                position: absolute;
+                bottom: -34px;
+                left: 50%;
+                margin-left: -75px;
+                .bx-controls-direction {
+                    width: 150px;
+                    a {
+                        overflow: hidden;
+                        display: inline-block;
+                        i {
+                            font-size: 12px;
+                            color: #ccc;
+                            font-weight: bold;
+                            &:hover {
+                                color: #2b2b2b;
+                            }
+                        }
+                        &.bx-prev {
+                            float: left;
+                        }
+                        &.bx-next {
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
     }
     @media(min-width: $lg) {
         margin-top: 0;
@@ -429,7 +483,7 @@ input[type=radio] {
     .summary {
         overflow-y: scroll;
         width: 100%;
-        min-height: 350px;
+        height: 350px;
         font-size: 13px;
         color: #666;
         line-height: 20px;
@@ -564,7 +618,44 @@ input[type=radio] {
 
 
 
-
+.test {
+    width: 450px;
+    height: 250px;
+    a {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        &:hover {
+            img {
+                transform: scale(1.1);
+                transition: transform 300ms ease-in;
+            }    
+        }
+        img {
+            display: block;
+            transform: scale(1);
+            transition: transform 300ms ease-out;
+            
+            
+            
+            
+//            transform: scale(1);
+//            & + img {
+//                display: none;
+//            }
+        }
+//        &:hover {
+//            img {
+//                display: none;
+//                & + img {
+//                    display: block;
+//                    transform: scale(2);
+//                    transition: transform 300ms ease-in;
+//                }
+//            }
+//        }
+    }
+}
 
 
 
