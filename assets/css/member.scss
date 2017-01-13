@@ -413,11 +413,43 @@
     }
 }
 
-
-
-
-
-
+/* service privacy 공통 */
+.common-terms {
+    .terms {
+        h3 {
+            margin-bottom: 20px;
+        }
+        .summary {
+            padding: 30px 10px;
+        }
+        @media(min-width: $sm) {
+            h3 {
+                font-size: 14px;
+            }
+            .summary {
+                padding: 25px 20px;
+            }
+        }
+        @media(min-width: $md) {
+            .summary {
+                padding: 30px 20px;
+            }
+        }
+    }
+}
+.email-refusal {
+    .terms {
+        .summary {
+            height: 300px;
+            @media(min-width: $sm) {
+                height: 190px;
+            }
+            @media(min-width: $md) {
+                height: 160px;
+            }
+        }
+    }
+}
 
 
 

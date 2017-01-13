@@ -312,4 +312,27 @@ address {
       .join-sucess .sucess .btn-area .btn-lg {
         width: 172px; } }
 
+/* service privacy 공통 */
+.common-terms .terms h3 {
+  margin-bottom: 20px; }
+.common-terms .terms .summary {
+  padding: 30px 10px; }
+@media (min-width: 768px) {
+  .common-terms .terms h3 {
+    font-size: 14px; }
+  .common-terms .terms .summary {
+    padding: 25px 20px; } }
+@media (min-width: 992px) {
+  .common-terms .terms .summary {
+    padding: 30px 20px; } }
+
+.email-refusal .terms .summary {
+  height: 300px; }
+  @media (min-width: 768px) {
+    .email-refusal .terms .summary {
+      height: 190px; } }
+  @media (min-width: 992px) {
+    .email-refusal .terms .summary {
+      height: 160px; } }
+
 /*# sourceMappingURL=member.css.map */

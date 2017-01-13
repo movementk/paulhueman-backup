@@ -3,7 +3,7 @@
 </head>
 <body class="sub">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
-    <!--?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/aside.php'); ?-->
+    <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/aside.php'); ?>
     <main id="content">
         <div class="container">
             <!-- page-path -->
@@ -71,32 +71,62 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        glasses-1
+                                        <ul class="bxslider">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="/assets/images/sub/item_img01.jpg" class="img-responsive" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="/assets/images/sub/item_img03.jpg" class="img-responsive" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="glasses-info">
+                                            PHS - 1089D Col.5 <br>
+                                            5 COLORS
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        glasses-2
+                                        <ul class="bxslider">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="/assets/images/sub/item_img01.jpg" class="img-responsive" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="/assets/images/sub/item_img03.jpg" class="img-responsive" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="glasses-info">
+                                            PHS - 1089D Col.5 <br>
+                                            5 COLORS
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        glasses-3
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses-item">
-                                        glasses-4
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses-item">
-                                        glasses-5
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses-item">
-                                        glasses-6
+                                        <ul class="bxslider">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="/assets/images/sub/item_img01.jpg" class="img-responsive" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="/assets/images/sub/item_img03.jpg" class="img-responsive" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="glasses-info">
+                                            PHS - 1089D Col.5 <br>
+                                            5 COLORS
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -104,7 +134,6 @@
                     </div>
                 </div>
             </div>
-            
             <!-- terms -->
             <div>
                 <h6 class="sub-title">이용약관 및 개인정보</h6>
@@ -131,9 +160,28 @@
                 </div>
             </div>
             
+            
+            <div class="test">
+                <a href="#">
+                    <img src="/assets/images/sub/item_img02.jpg" alt="">
+<!--                    <img src="/assets/images/sub/item_img02.jpg" alt="">-->
+                </a>
+            </div>
         </div><!--// Container -->
     </main><!--// Main Content -->
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
+    <script src="/assets/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script>
+        (function($) {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                controls: true,
+                pager: false,
+                prevText: '<i class="icon-left-open-mini"></i>',
+                nextText: '<i class="icon-right-open-mini"></i>'
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>
