@@ -35,7 +35,7 @@
                         <form action="#">
                             <div class="form-group">
                                 <label class="sr-only" for="global-search-keyword">검색하기</label>
-                                <input class="form-control" id="global-search-keyword" type="input" placeholder="Search">
+                                <input class="form-control" id="global-search-keyword" type="text" placeholder="Search">
                             </div>
                             <button class="btn btn-search" type="submit"><span class="sr-only">검색</span></button>
                         </form>
@@ -48,7 +48,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-4 hidden-lg">
-                    <button type="buton" class="btn btn-aside-open"><span class="sr-only">네비버튼</span></button>
+                    <button type="button" class="btn btn-aside-open"><span class="sr-only">네비버튼</span></button>
                 </div>
                 <div class="col-xs-4 col-lg-4 col-lg-offset-4">
                     <h1><a href="/"><img src="/assets/images/logo.gif" alt="Paul Hueman PARIS"></a></h1>
@@ -65,39 +65,25 @@
             <ul class="row">
                 <li class="col-sm-3 col-lg-2 col-lg-offset-2">
                     <a href="#">STORY</a>
-                    <ul class="visible-lg">
-                        <li><a href="#">sub-1</a></li>
-                        <li><a href="#">sub-1</a></li>
-                        <li><a href="#">sub-1</a></li>
-                        <li><a href="#">sub-1</a></li>
-                    </ul>
                 </li>
                 <li class="col-sm-3 col-lg-2">
                     <a href="#">SHOP</a>
                     <ul class="visible-lg">
-                        <li><a href="#">sub-1</a></li>
-                        <li><a href="#">sub-1</a></li>
-                        <li><a href="#">sub-1</a></li>
-                        <li><a href="#">sub-1</a></li>
+                        <li><a href="#">Sunglasses</a></li>
+                        <li><a href="#">Glasses</a></li>
                     </ul>
                 </li>
                 <li class="col-sm-3 col-lg-2">
                     <a href="#">CAMPAIGN</a>
                     <ul class="visible-lg">
                         <li><a href="#">DIARY</a></li>
-                        <li><a href="#">VIDEO</a></li>
                         <li><a href="#">CELEB</a></li>
+                        <li><a href="#">VIDEO</a></li>
                         <li><a href="#">LOOKBOOK</a></li>
                     </ul>
                 </li>
                 <li class="col-sm-3 col-lg-2">
                     <a href="#">STOCKISTS</a>
-                    <ul class="visible-lg">
-                        <li><a href="#">sub-1</a></li>
-                        <li><a href="#">sub-1</a></li>
-                        <li><a href="#">sub-1</a></li>
-                        <li><a href="#">sub-1</a></li>
-                    </ul>
                 </li>
             </ul>
         </div>
