@@ -345,8 +345,17 @@
 
 /* join-sucess */
 .join-sucess {
+    .step-list {
+        margin-bottom: 67px;
+        @media(min-width: $sm) {
+            margin-bottom: 90px;
+        }
+        @media(min-width: $sm) {
+            margin-bottom: 105px;
+        }
+    }
     .sucess {
-        padding-top: 89px;
+        padding-top: 90px;
         background-image: url(/assets/images/member/join_sucess_bg.gif);
         background-repeat: no-repeat;
         background-position: 50% 0;
@@ -370,6 +379,34 @@
                 .btn-lg {
                     height: 40px;
                     line-height: 38px;
+                }
+            }
+        }
+        @media(min-width: $sm) {
+            padding-top: 100px;
+            h3 {
+                font-size: 23px;
+                line-height: 30px;
+                margin-bottom: 35px;
+            }
+            > p {
+                font-size: 13px;
+                line-height: 22px;
+            }
+        }
+        @media(min-width: $md) {
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 30px;
+            }
+            > p {
+                
+            }
+            .btn-area {
+                margin-top: 35px;
+                .btn-lg {
+                    width: 172px;
                 }
             }
         }
