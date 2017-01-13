@@ -262,8 +262,16 @@ address {
       margin-top: 60px; } }
 
 /* join-sucess */
+.join-sucess .step-list {
+  margin-bottom: 67px; }
+  @media (min-width: 768px) {
+    .join-sucess .step-list {
+      margin-bottom: 90px; } }
+  @media (min-width: 768px) {
+    .join-sucess .step-list {
+      margin-bottom: 105px; } }
 .join-sucess .sucess {
-  padding-top: 89px;
+  padding-top: 90px;
   background-image: url(/assets/images/member/join_sucess_bg.gif);
   background-repeat: no-repeat;
   background-position: 50% 0; }
@@ -284,5 +292,24 @@ address {
     .join-sucess .sucess .btn-area p .btn-lg {
       height: 40px;
       line-height: 38px; }
+  @media (min-width: 768px) {
+    .join-sucess .sucess {
+      padding-top: 100px; }
+      .join-sucess .sucess h3 {
+        font-size: 23px;
+        line-height: 30px;
+        margin-bottom: 35px; }
+      .join-sucess .sucess > p {
+        font-size: 13px;
+        line-height: 22px; } }
+  @media (min-width: 992px) {
+    .join-sucess .sucess h3 {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 30px; }
+    .join-sucess .sucess .btn-area {
+      margin-top: 35px; }
+      .join-sucess .sucess .btn-area .btn-lg {
+        width: 172px; } }
 
 /*# sourceMappingURL=member.css.map */
