@@ -251,5 +251,90 @@ address {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #e8ebf4; }
+  #social ul {
+    margin-left: -3px;
+    margin-right: -3px; }
+    #social ul li {
+      padding-left: 3px;
+      padding-right: 3px; }
+      #social ul li a .figure {
+        position: relative; }
+        #social ul li a .figure h5 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          background-color: #fff;
+          text-align: center;
+          line-height: 18px; }
+      #social ul li a .details {
+        display: none; }
+      #social ul li a.instagram .figure h5:before {
+        font-family: 'fontello';
+        content: '\F16D';
+        color: #555; }
+      #social ul li a.blog .figure h5 {
+        background-image: url(/assets/images/ico_blog.svg);
+        background-position: 50% 50%;
+        background-repeat: no-repeat; }
+      #social ul li a.facebook .figure h5:before {
+        font-family: 'fontello';
+        content: '\F09A';
+        color: #555; }
+  @media (min-width: 768px) {
+    #social {
+      padding-top: 60px;
+      padding-bottom: 60px; }
+      #social ul {
+        margin-left: -10px;
+        margin-right: -10px; }
+        #social ul li {
+          padding-left: 10px;
+          padding-right: 10px; }
+          #social ul li a .figure h5 {
+            width: 42px;
+            height: 42px;
+            line-height: 40px;
+            font-size: 20px; }
+          #social ul li a.blog .figure h5 {
+            background-size: 14px auto; } }
+  @media (min-width: 1280px) {
+    #social {
+      padding-top: 95px;
+      padding-bottom: 95px; }
+      #social ul {
+        margin-left: -15px;
+        margin-right: -15px; }
+        #social ul li {
+          padding-left: 15px;
+          padding-right: 15px; }
+          #social ul li a .figure h5 {
+            position: absolute;
+            left: 50%;
+            bottom: -30px;
+            top: inherit;
+            width: 60px;
+            height: 60px;
+            margin-left: -30px;
+            font-size: 27px;
+            line-height: 58px; }
+          #social ul li a .details {
+            display: block;
+            padding: 50px 20px 35px;
+            height: 130px;
+            background-color: #fff;
+            font-size: 15px;
+            line-height: 22px;
+            color: #666;
+            font-weight: 300; }
+            #social ul li a .details .author {
+              font-weight: bold; }
+            #social ul li a .details p {
+              display: inline; }
+          #social ul li a.blog .figure h5 {
+            background-size: 18px auto; }
+          #social ul li a:hover, #social ul li a:focus {
+            text-decoration: underline; } }
 
 /*# sourceMappingURL=main.css.map */

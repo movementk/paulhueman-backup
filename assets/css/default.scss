@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/earlyaccess/jejumyeongjo.css');
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
 
 html {
@@ -29,6 +28,7 @@ body {
     min-width: 320px;
     @include noto();
     font-size: 12px;
+    font-weight: 300;
     color: #2b2b2b;
     @media (min-width: $sm) {
         margin-top: 145px;
@@ -735,6 +735,7 @@ body.aside-open {
     @media (min-width: $lg) {
         .policy {
             margin-top: 0;
+            text-align: right;
         }
     }
 }

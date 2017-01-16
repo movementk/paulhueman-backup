@@ -134,9 +134,9 @@
             <div class="container">
                 <ul class="row">
                     <li class="col-xs-4">
-                        <a href="#">
+                        <a class="instagram" href="#">
                             <div class="figure">
-                                <h5>인스타그램</h5>
+                                <h5><span class="sr-only">인스타그램</span></h5>
                                 <p><img class="img-responsive" src="/assets/images/main/img_social_insta.jpg" alt=""></p>
                             </div>
                             <div class="details">
@@ -146,9 +146,9 @@
                         </a>
                     </li>
                     <li class="col-xs-4">
-                        <a href="#">
+                        <a class="blog" href="#">
                             <div class="figure">
-                                <h5>블로그</h5>
+                                <h5><span class="sr-only">블로그</span></h5>
                                 <p><img class="img-responsive" src="/assets/images/main/img_social_blog.jpg" alt=""></p>
                             </div>
                             <div class="details">
@@ -157,9 +157,9 @@
                         </a>
                     </li>
                     <li class="col-xs-4">
-                        <a href="#">
+                        <a class="facebook" href="#">
                             <div class="figure">
-                                <h5>페이스북</h5>
+                                <h5><span class="sr-only">페이스북</span></h5>
                                 <p><img class="img-responsive" src="/assets/images/main/img_social_facebook.jpg" alt=""></p>
                             </div>
                             <div class="details">
