@@ -13,11 +13,6 @@
                 &:last-child {
                     padding-bottom: 0;
                 }
-                > .check {
-                    &:first-child {
-                        margin-right: 20px;
-                    }
-                }
                 @media(min-width: $sm) {
                     padding-bottom: 10px;
                     &:first-child {
