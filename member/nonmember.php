@@ -5,7 +5,7 @@
 <body class="sub member">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/aside.php'); ?>
-    <main id="content" class="login">
+    <main id="content" class="login nonmember">
         <div class="container">
             <!-- page-path -->
             <div class="page-path">
@@ -20,21 +20,22 @@
             </div>
             <div class="login-form">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#">회원</a></li>
-                    <li><a href="/member/nonmember.php">비회원 (주문 및 주문조회)</a></li>
+                    <li><a href="/member/login.php">회원</a></li>
+                    <li class="active"><a href="#">비회원 (주문 및 주문조회)</a></li>
                 </ul>
                 <div class="tab-content">
                     <form action="#">
                         <div class="form-group">
-                            <label class="check"><input type="checkbox">아이디 저장</label>
+                            <label for="u-name" class="sr-only">주문자명</label>
+                            <input type="text" class="form-control" id="u-name" placeholder="주문자명">
                         </div>
                         <div class="form-group">
-                            <label for="u-id" class="sr-only">아이디</label>
-                            <input type="text" class="form-control" id="u-id" placeholder="아이디">
+                            <label for="o-number" class="sr-only">주문번호</label>
+                            <input type="text" class="form-control" id="o-number" placeholder="주문번호">
                         </div>
                         <div class="form-group">
-                            <label for="u-pw" class="sr-only">비밀번호</label>
-                            <input type="password" class="form-control" id="u-pw" placeholder="비밀번호">
+                            <label for="u-phone" class="sr-only">휴대폰번호</label>
+                            <input type="text" class="form-control" id="u-phone" placeholder="휴대폰번호">
                         </div>
                         <div class="btn-area">
                             <p>
@@ -43,20 +44,9 @@
                         </div>
                     </form>
                     <div class="id-find-join">
-                        <ul class="dot-list">
-                            <li>
-                                <dl>
-                                    <dt>아이디 또는 비밀번호를 잊어버리셨나요?</dt>
-                                    <dd><a href="/member/id_find.php">아이디 / 비밀번호 찾기</a></dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>아직 회원가입이 되어있지 않으신가요?</dt>
-                                    <dd><a href="/member/join_terms.php">회원가입하기</a></dd>
-                                </dl>
-                            </li>
-                        </ul>
+                        <p class="attention">
+                            주문 시 설정한 비밀번호가 생각나지 않으신다면 고객센터 <a href="tel:0800804937">080-080-4937</a>로 문의하시기 바랍니다.
+                        </p>
                     </div>
                 </div>
             </div>
