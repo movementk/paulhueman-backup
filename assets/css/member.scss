@@ -13,11 +13,6 @@
                 &:last-child {
                     padding-bottom: 0;
                 }
-                > .check {
-                    &:first-child {
-                        margin-right: 20px;
-                    }
-                }
                 @media(min-width: $sm) {
                     padding-bottom: 10px;
                     &:first-child {
@@ -40,6 +35,9 @@
                 .dot-list {
                     li {
                         margin-bottom: 25px;
+                        &:before {
+                            top: -3px;
+                        }
                         dl {
                             dt {
                                 font-size: 11px;
@@ -71,6 +69,9 @@
                     .dot-list {
                         li {
                             margin-bottom: 0;
+                            &:before {
+                                top: -2px;
+                            }
                             dl {
                                 overflow: hidden;
                                 dt {
@@ -92,6 +93,43 @@
             @media(min-width: $sm) {
                 padding-top: 115px;
                 padding-bottom: 150px;
+            }
+        }
+    }
+}
+
+/* nonmember */
+.nonmember {
+    .login-form {
+        .tab-content {
+            padding-top: 70px;
+            @media(min-width: $sm) {
+                padding-top: 130px;
+            }
+            @media(min-width: $md) {
+                padding-top: 110px;
+            }
+            .id-find-join {
+                .attention {
+                    position: relative;
+                    font-size: 11px;
+                    color: #666;
+                    line-height: 18px;
+                    padding-left: 15px;
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 15px;
+                        color: #666;
+                        font-family: "fontello";
+                        content: '\E806'; 
+                    }
+                    a {
+                        font-size: 11px;
+                        color: #666;
+                    }
+                }
             }
         }
     }

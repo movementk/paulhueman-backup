@@ -1,28 +1,17 @@
 @import 'common';
 
-/* 메인페이지 완료되면 Header CSS 제거 */
 .sub {
-    #aside {
-        background: none;
-    }
     #content {
-        min-height: 500px !important;
-        background: none;
-        padding-bottom: 100px;
-        @media(min-width: $md) {
+        min-height: 600px;
+        padding-bottom: 115px;
+        @media(min-width: $sm) {
             padding-bottom: 150px;
         }
-        @media(min-width: $lg) {
+        @media(min-width: $md) {
             padding-bottom: 170px;
         }
     }
 }
-/* 
-    main 완료 위의 소스 제거 
-    이하로 작성되는 scss는 사용 2017-01-10
-*/
-
-
 label {
     font-size: 11px;
     color: #666;
@@ -38,7 +27,7 @@ input[type=checkbox] {
 input[type=radio] {
     vertical-align: top;
     margin: 0 !important;
-    margin-top: 2px !important;
+    margin-top: 3px !important;
     margin-right: 5px !important;
 }
 .check {
@@ -149,13 +138,21 @@ input[type=radio] {
         font-size: 23px;
         color: #000;
         margin-bottom: 30px;
+        letter-spacing: -1px;
         @include lato();
     }
     > p {
         font-size: 12px;
         color: #666;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 20px;
+        letter-spacing: -.5px;
+        &.font-lato {
+            @include lato();
+            @media(min-width: $lg) {
+                display: none;
+            }
+        }
     }
     @media(min-width: $sm) {
         margin-bottom: 60px;
@@ -242,7 +239,6 @@ input[type=radio] {
     }
 }
 
-
 /* btn-area */
 .btn-area {
     p {
@@ -305,7 +301,9 @@ input[type=radio] {
             }
         }
         .btn-white {
-            border: 1px solid #ccc;
+            color: #666;
+            border: 1px solid #aaa;
+            background-color: #fff;
         }
         .btn-gray {
             color: #fff;
@@ -353,6 +351,7 @@ input[type=radio] {
                 display: block;
                 width: 140px;
                 height: 35px;
+                font-weight: 400;
                 font-size: 11px;
                 color: #2b2b2b;
                 line-height: 33px;
@@ -411,7 +410,6 @@ input[type=radio] {
     .glasses-item {
         text-align: center;
         margin-bottom: 80px;
-//        border: 1px solid #ccc;
         .bx-wrapper {
             position: relative;
             .bx-viewport {
@@ -422,7 +420,6 @@ input[type=radio] {
                             height: 180px;
                             line-height: 180px;
                             background: none;
-//                            transition: background .1s ease;
                             img {
                                 display: inline-block;
                             }
@@ -596,7 +593,7 @@ input[type=radio] {
         padding-left: 15px;
         &:before {
             position: absolute;
-            top: -3px;
+            top: 0px;
             left: 0;
             font-size: 15px;
             color: #666;

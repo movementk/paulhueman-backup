@@ -29,8 +29,6 @@ address {
       text-align: right; }
     .login .login-form .tab-content .form-group:last-child {
       padding-bottom: 0; }
-    .login .login-form .tab-content .form-group > .check:first-child {
-      margin-right: 20px; }
     @media (min-width: 768px) {
       .login .login-form .tab-content .form-group {
         padding-bottom: 10px; }
@@ -48,6 +46,8 @@ address {
     padding-top: 30px; }
     .login .login-form .tab-content .id-find-join .dot-list li {
       margin-bottom: 25px; }
+      .login .login-form .tab-content .id-find-join .dot-list li:before {
+        top: -3px; }
       .login .login-form .tab-content .id-find-join .dot-list li dl dt {
         font-size: 11px;
         color: #666;
@@ -69,6 +69,8 @@ address {
         padding-top: 40px; }
         .login .login-form .tab-content .id-find-join .dot-list li {
           margin-bottom: 0; }
+          .login .login-form .tab-content .id-find-join .dot-list li:before {
+            top: -2px; }
           .login .login-form .tab-content .id-find-join .dot-list li dl {
             overflow: hidden; }
             .login .login-form .tab-content .id-find-join .dot-list li dl dt {
@@ -83,6 +85,33 @@ address {
     .login .login-form .tab-content {
       padding-top: 115px;
       padding-bottom: 150px; } }
+
+/* nonmember */
+.nonmember .login-form .tab-content {
+  padding-top: 70px; }
+  @media (min-width: 768px) {
+    .nonmember .login-form .tab-content {
+      padding-top: 130px; } }
+  @media (min-width: 992px) {
+    .nonmember .login-form .tab-content {
+      padding-top: 110px; } }
+  .nonmember .login-form .tab-content .id-find-join .attention {
+    position: relative;
+    font-size: 11px;
+    color: #666;
+    line-height: 18px;
+    padding-left: 15px; }
+    .nonmember .login-form .tab-content .id-find-join .attention:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 15px;
+      color: #666;
+      font-family: "fontello";
+      content: '\E806'; }
+    .nonmember .login-form .tab-content .id-find-join .attention a {
+      font-size: 11px;
+      color: #666; }
 
 /* id-find, pw-find 공통 find */
 .find .find-form .tab-content {

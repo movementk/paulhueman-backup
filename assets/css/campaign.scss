@@ -1,0 +1,306 @@
+@import 'common';
+
+.campaign {
+    #content {
+        padding-bottom: 80px;
+        @media(min-width: $sm) {
+            padding-bottom: 100px;
+        }
+        @media(min-width: $md) {
+            padding-bottom: 200px;
+        }
+    }
+}
+.lnb {
+    display: none;
+    @media(min-width: $lg) {
+        display: block;
+    }
+}
+/* list 공통 */
+.campaign-list {
+    .glasses-list {
+        .row {
+            > div {
+                @media(min-width: $sm) {
+                    &:nth-of-type(2n + 1) {
+                        clear: both;
+                        padding-right: 52px;
+                    }
+                    &:nth-of-type(2n) {
+                        padding-left: 52px;    
+                    }
+                }
+                @media(min-width: $md ) {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    &:nth-of-type(2n + 1) {
+                        clear: none;
+                        padding-right: 10px;
+                    }
+                    &:nth-of-type(2n) {
+                        padding-left: 10px;
+                    }
+                    &:nth-of-type(3n + 1) {
+                        clear: both;
+                    }
+                }
+                &.none-sm {
+                    display: none;
+                    @media(min-width: $sm) {
+                        display: block;
+                    }
+                }
+                &.none-md {
+                    display: none;
+                    @media(min-width: $md) {
+                        display: block;
+                    }
+                }
+                .glasses-item {
+                    margin-bottom: 110px;
+                    @media(min-width: $sm) {
+                        margin-bottom: 125px;
+                    }
+                    @media(min-width: $lg) {
+                        margin-bottom: 110px;
+                    }
+                    a {
+                        display: block;
+                        figure {
+                            img {
+                                width: 100%;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                            figcaption {
+                                font-size: 12px;
+                                color: #2b2b2b;
+                                font-weight: 400;
+                                line-height: 25px;
+                                text-align: center;
+                                margin-top: 30px;
+                                @include lato();
+                                .date {
+                                    display: none;
+                                    @media(min-width: $sm) {
+                                        display: block;
+                                    }
+                                    @media(min-width: $lg) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* view 공통 */
+.campaign-view {
+    .details-img {
+        margin-bottom: 120px;
+        @media(min-width: $sm) {
+            margin-bottom: 160px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        figcaption {
+            font-size: 11px;
+            color: #2b2b2b;
+            line-height: 22px;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 15px;
+            letter-spacing: 1px;
+            @include lato();
+        }
+        @media(min-width: $sm) {
+            figcaption {
+                font-size: 12px;
+                line-height: 24px;
+            }
+        }
+        @media(min-width: $md) {
+            figcaption {
+                margin-top: 30px;
+                line-height: 25px;
+            }
+        }
+    }
+    .product-front {
+        margin-bottom: 75px;
+        @media(min-width: $sm) {
+            margin-bottom: 100px;
+        }
+        @media(min-width: $md) {
+            margin-bottom: 240px;
+        }
+        .product-img {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            margin-bottom: 40px;
+            @media(min-width: $sm) {
+                margin-bottom: 55px;
+            }
+            @media(min-width: $md) {
+                margin-bottom: 0;
+                img {
+                    display: inline-block;
+                    text-align: left;
+                }
+            }
+        }
+        .product-info {
+            text-align: center;
+            h3 {
+                font-size: 14px;
+                color: #2b2b2b;
+                font-weight: bold;
+                @include lato();
+                @media(min-width: $sm) {
+                    font-size: 15px;
+                }
+            }
+            .amount {
+                font-size: 12px;
+                color: #2b2b2b;
+                font-weight: 400;
+                margin: 20px 0 25px;
+                @include lato();
+            }
+            dl {
+                display: inline-block;
+                overflow: hidden;
+                dt {
+                    float: left;
+                    clear: both;
+                    font-size: 11px;
+                    color: #2b2b2b;
+                    font-weight: 400;
+                    line-height: 20px;
+                    @include lato();
+                    &:after {
+                        content: ":";
+                        padding-left: 5px;
+                        padding-right: 4px;
+                    }
+                }
+                dd {
+                    float: left;
+                    font-size: 11px;
+                    color: #2b2b2b;
+                    font-weight: 400;
+                    line-height: 20px;
+                    @include lato();
+                }
+            }
+            @media(min-width: $md) {
+                float: right;
+                text-align: left;
+                padding-right: 30px;
+                margin-top: 45px;
+            }
+        }
+    }
+    .product-aspect {
+        .product-img {
+            margin-bottom: 100px;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            @media(min-width: $sm) {
+                margin-bottom: 140px;
+            }
+            @media(min-width: $lg) {
+                padding-left: 160px;
+                img {
+                    display: inline-block;
+                    text-align: left;
+                }
+            }
+        }
+        .product-feature {
+            text-align: center;
+            p {
+                font-size: 11px;
+                color: #2b2b2b;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 35px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                @media(min-width: $sm) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .btn-area {
+        margin-top: 70px;
+        @media(min-width: $sm) {
+            margin-top: 90px;
+        }
+        @media(min-width: $lg) {
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
