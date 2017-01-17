@@ -7,13 +7,13 @@
     <main id="content">
         <div id="visual">
             <div class="container visible-lg visible-md">
-                <p><img class="img-responsive" src="/assets/images/main/img_visual_lg.jpg"></p>
+                <p><img class="img-responsive" src="/assets/images/main/img_visual_lg.jpg" alt=""></p>
             </div>
             <div class="container visible-sm">
-                <p><img class="img-responsive" src="/assets/images/main/img_visual_sm.jpg"></p>
+                <p><img class="img-responsive" src="/assets/images/main/img_visual_sm.jpg" alt=""></p>
             </div>
             <div class="visible-xs">
-                <p><img src="/assets/images/main/img_visual_xs.jpg"></p>
+                <p><img src="/assets/images/main/img_visual_xs.jpg" alt=""></p>
             </div>
         </div>
         <div id="campaign">
@@ -34,7 +34,7 @@
                 </div>
                 <div class="campaign-item campaign-item-3">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/m8Fvq9aJpmA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/m8Fvq9aJpmA?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

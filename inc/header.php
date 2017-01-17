@@ -21,7 +21,7 @@
                             <button class="btn dropdown-toggle" type="button" id="mypage-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 마이페이지
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="global-site">
+                            <div class="dropdown-menu" aria-labelledby="mypage-menu">
                                 <ul>
                                     <li><a href="#">MY ACCOUNT</a></li>
                                     <li><a href="#">ORDERS</a></li>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-xs-4 hidden-lg">
                     <a href="#" class="btn btn-cart"><span class="sr-only">장바구니</span></a>
-                    <button type="buton" class="btn btn-search"><span class="sr-only">검색</span></button>
+                    <button type="button" class="btn btn-search"><span class="sr-only">검색</span></button>
                 </div>
             </div>
         </div>

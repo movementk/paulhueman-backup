@@ -48,10 +48,10 @@
             <nav>
                 <div class="global">
                     <div class="dropup">
-                        <button class="btn dropdown-toggle" type="button" id="global-site" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <button class="btn dropdown-toggle" type="button" id="global-site-aside" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             <span>GLOBAL SHIPPING</span>
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="global-site">
+                        <ul class="dropdown-menu" aria-labelledby="global-site-aside">
                             <li><a href="#">ENG</a></li>
                             <li><a href="#">CHN</a></li>
                         </ul>
