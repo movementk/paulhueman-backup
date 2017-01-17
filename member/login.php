@@ -26,7 +26,6 @@
                 <div class="tab-content">
                     <form action="#">
                         <div class="form-group">
-                            <label class="check"><input type="checkbox">자동 로그인</label>
                             <label class="check"><input type="checkbox">아이디 저장</label>
                         </div>
                         <div class="form-group">

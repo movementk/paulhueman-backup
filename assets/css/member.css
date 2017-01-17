@@ -29,8 +29,6 @@ address {
       text-align: right; }
     .login .login-form .tab-content .form-group:last-child {
       padding-bottom: 0; }
-    .login .login-form .tab-content .form-group > .check:first-child {
-      margin-right: 20px; }
     @media (min-width: 768px) {
       .login .login-form .tab-content .form-group {
         padding-bottom: 10px; }
