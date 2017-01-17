@@ -86,13 +86,24 @@ address {
       margin-top: 30px;
       font-family: 'Lato', sans-serif; }
       .campaign-list .glasses-list .row > div .glasses-item a figure figcaption .date {
-        display: none; }
+        display: none;
+        font-weight: 600; }
         @media (min-width: 768px) {
           .campaign-list .glasses-list .row > div .glasses-item a figure figcaption .date {
             display: block; } }
         @media (min-width: 1280px) {
           .campaign-list .glasses-list .row > div .glasses-item a figure figcaption .date {
             display: none; } }
+
+/* celeb-list 추가 */
+.celeb-list figure figcaption {
+  font-family: 'Noto Sans KR', sans-serif !important; }
+  .celeb-list figure figcaption .date {
+    font-family: 'Lato', sans-serif;
+    display: block !important; }
+    @media (min-width: 1280px) {
+      .celeb-list figure figcaption .date {
+        display: none !important; } }
 
 /* view 공통 */
 .campaign-view .details-img {
@@ -221,5 +232,30 @@ address {
   @media (min-width: 1280px) {
     .campaign-view .btn-area {
       display: none; } }
+
+/* celeb-view 추가 */
+.celeb-view .product-aspect .product-img {
+  text-align: left;
+  padding-left: 0; }
+  @media (min-width: 1280px) {
+    .celeb-view .product-aspect .product-img {
+      margin-bottom: 180px; } }
+
+/* video-view 추가 */
+.video-view .video-frame .feature {
+  font-size: 11px;
+  color: #2b2b2b;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 20px; }
+  @media (min-width: 768px) {
+    .video-view .video-frame .feature {
+      font-size: 12px;
+      line-height: 24px;
+      margin-top: 30px; } }
+  @media (min-width: 992px) {
+    .video-view .video-frame .feature {
+      margin-top: 40px;
+      line-height: 25px; } }
 
 /*# sourceMappingURL=campaign.css.map */

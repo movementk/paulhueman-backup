@@ -5,14 +5,14 @@
 <body class="sub campaign">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/aside.php'); ?>
-    <main id="content" class="diary-list">
+    <main id="content" class="celeb-list">
         <div class="container">
             <!-- page-path -->
             <div class="page-path">
                 <ol class="breadcrumb">
                     <li><a href="/"><i class="icon-home"></i></a></li>
                     <li><a href="#">CAMPAIGN</a></li>
-                    <li class="active">DIARY</li>
+                    <li class="active">CELEB</li>
                 </ol>
             </div>
             <div class="campaign-list">
@@ -21,8 +21,8 @@
                         <div class="lnb">
                             <h2 class="visible-lg">CAMPAIGN</h2>
                             <ul>
-                                <li class="active"><a href="#">DIARY</a></li>
-                                <li><a href="#">CELEB</a></li>
+                                <li><a href="#">DIARY</a></li>
+                                <li class="active"><a href="#">CELEB</a></li>
                                 <li><a href="#">VIDEO</a></li>
                                 <li><a href="#">LOOKBOOK</a></li>
                             </ul>
@@ -33,11 +33,12 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/celeb_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img01.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/star_img01.jpg" class="img-responsive" alt="">
                                                 <figcaption>
-                                                    What’s Your Sign?
+                                                    민효린 스타일 폴휴먼 하금테<br>
+                                                    선글라스_PHS-1070A
                                                     <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
@@ -46,11 +47,12 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/celeb_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img02.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/star_img02.jpg" class="img-responsive" alt="">
                                                 <figcaption>
-                                                    What’s Your Sign?
+                                                    살림하는 남자들 김승우 폴휴먼<br>
+                                                    안경테 고급앤틱 눈길 끌어!
                                                     <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
@@ -59,11 +61,11 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/celeb_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img03.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/star_img03.jpg" class="img-responsive" alt="">
                                                 <figcaption>
-                                                    What’s Your Sign?
+                                                    폴휴먼 여자선글라스★성유리 PHS-1075A
                                                     <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
@@ -72,11 +74,12 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/celeb_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img04.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/star_img04.jpg" class="img-responsive" alt="">
                                                 <figcaption>
-                                                    What’s Your Sign?
+                                                    굿바이 미스터 블랙 송재림 하금테<br>
+                                                    안경 폴휴먼 PHF-5060D
                                                     <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
@@ -85,11 +88,12 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/celeb_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img05.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/star_img05.jpg" class="img-responsive" alt="">
                                                 <figcaption>
-                                                    What’s Your Sign?
+                                                    Paul Hueman 폴휴먼 캣아이 성유리<br>
+                                                    선글라스 PHS-1067A
                                                     <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
@@ -98,11 +102,12 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4 none-sm">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/celeb_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img06.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/star_img06.jpg" class="img-responsive" alt="">
                                                 <figcaption>
-                                                    What’s Your Sign?
+                                                    Paul Hueman 폴휴먼 서강준<br>
+                                                    솔텍스 안경 PHF-160A
                                                     <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
@@ -111,11 +116,12 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4 none-sm">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/celeb_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img07.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/star_img07.jpg" class="img-responsive" alt="">
                                                 <figcaption>
-                                                    What’s Your Sign?
+                                                    폴휴먼 paul hueman 민효린 선글라스,<br>
+                                                    보잉 선글라스 PHS-1071A
                                                     <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
@@ -124,11 +130,12 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4 none-sm">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/celeb_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img08.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/star_img08.jpg" class="img-responsive" alt="">
                                                 <figcaption>
-                                                    What’s Your Sign?
+                                                    폴휴먼(Paul Hueman), 폴휴먼 하금테- 폴휴먼<br>
+                                                    하금테안경,남자하금테,폴휴먼안경
                                                     <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
@@ -137,11 +144,12 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4 none-md">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/celeb_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img09.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/star_img09.jpg" class="img-responsive" alt="">
                                                 <figcaption>
-                                                    What’s Your Sign?
+                                                    폴휴먼안경,폴휴먼,오버사이즈안경,뿔테,<br>
+                                                    사각안경,paulhuman,폴휴먼안경테
                                                     <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>

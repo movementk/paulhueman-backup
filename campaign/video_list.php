@@ -5,14 +5,15 @@
 <body class="sub campaign">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/aside.php'); ?>
-    <main id="content" class="diary-list">
+    <main id="content" class="video-list">
         <div class="container">
             <!-- page-path -->
             <div class="page-path">
                 <ol class="breadcrumb">
                     <li><a href="/"><i class="icon-home"></i></a></li>
                     <li><a href="#">CAMPAIGN</a></li>
-                    <li class="active">DIARY</li>
+                    <li><a href="#">VIDEO</a></li>
+                    <li class="active">2017</li>
                 </ol>
             </div>
             <div class="campaign-list">
@@ -21,9 +22,9 @@
                         <div class="lnb">
                             <h2 class="visible-lg">CAMPAIGN</h2>
                             <ul>
-                                <li class="active"><a href="#">DIARY</a></li>
+                                <li><a href="#">DIARY</a></li>
                                 <li><a href="#">CELEB</a></li>
-                                <li><a href="#">VIDEO</a></li>
+                                <li class="active"><a href="#">VIDEO</a></li>
                                 <li><a href="#">LOOKBOOK</a></li>
                             </ul>
                         </div>
@@ -33,9 +34,9 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/video_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img01.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/video_img01.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
                                                     <p class="date">2016.01.01</p>
@@ -46,9 +47,9 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/video_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img02.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/video_img02.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
                                                     <p class="date">2016.01.01</p>
@@ -59,9 +60,9 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/video_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img03.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/video_img03.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
                                                     <p class="date">2016.01.01</p>
@@ -72,9 +73,9 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/video_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img04.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/video_img04.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
                                                     <p class="date">2016.01.01</p>
@@ -85,9 +86,9 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/video_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img05.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/video_img05.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
                                                     <p class="date">2016.01.01</p>
@@ -98,9 +99,9 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4 none-sm">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/video_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img06.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/video_img06.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
                                                     <p class="date">2016.01.01</p>
@@ -111,9 +112,9 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4 none-sm">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/video_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img07.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/video_img07.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
                                                     <p class="date">2016.01.01</p>
@@ -124,9 +125,9 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4 none-sm">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/video_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img08.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/video_img08.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
                                                     <p class="date">2016.01.01</p>
@@ -137,9 +138,9 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4 none-md">
                                     <div class="glasses-item">
-                                        <a href="/campaign/diary_view.php">
+                                        <a href="/campaign/video_view.php">
                                             <figure>
-                                                <img src="/assets/images/campaign/diary_img09.jpg" class="img-responsive" alt="">
+                                                <img src="/assets/images/campaign/video_img09.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
                                                     <p class="date">2016.01.01</p>
