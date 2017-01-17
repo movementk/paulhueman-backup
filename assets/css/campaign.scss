@@ -83,6 +83,7 @@
                                 @include lato();
                                 .date {
                                     display: none;
+                                    font-weight: 600;
                                     @media(min-width: $sm) {
                                         display: block;
                                     }
@@ -98,6 +99,22 @@
         }
     }
 }
+/* celeb-list 추가 */
+.celeb-list {
+    figure {
+        figcaption {
+            font-family: 'Noto Sans KR', sans-serif !important;
+            .date {
+                @include lato();
+                display: block !important;
+                @media(min-width: $lg) {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
 /* view 공통 */
 .campaign-view {
     .details-img {
@@ -254,10 +271,39 @@
         }
     }
 }
-
-
-
-
+/* celeb-view 추가 */
+.celeb-view {
+    .product-aspect {
+        .product-img {
+            text-align: left;
+            padding-left: 0;
+            @media(min-width: $lg) {
+                margin-bottom: 180px;
+            }
+        }
+    }
+}
+/* video-view 추가 */
+.video-view {
+    .video-frame {
+        .feature {
+            font-size: 11px;
+            color: #2b2b2b;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 20px;
+            @media(min-width: $sm) {
+                font-size: 12px;
+                line-height: 24px;
+                margin-top: 30px;
+            }
+            @media(min-width: $md) {
+                margin-top: 40px;
+                line-height: 25px;
+            }
+        }
+    }
+}
 
 
 
