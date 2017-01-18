@@ -16,7 +16,7 @@
             </div>
             
             <!-- join step -->
-            <div style="margin: 30px 0;">
+            <div style="margin: 50px 0;">
                 <h6 class="sub-title">회원가입 절차</h6>
                 <ol class="step-list">
                     <li class="active">
@@ -35,7 +35,7 @@
             </div>
             
             <!-- button list -->
-            <div style="margin: 30px 0;">
+            <div style="margin: 50px 0;">
                 <h6 class="sub-title">버튼</h6>
                 <div class="btn-area">
                     <p>
@@ -50,11 +50,15 @@
                         <a href="#" class="btn btn-sm btn-white" role="button">회원가입 취소</a>
                         <button type="submit" class="btn btn-sm btn-gray">다음</button>
                     </p>
+                    <span style="margin-top: 10px; display: block;"></span>
+                    <p>
+                        <a href="#" class="btn btn-default btn-gray" role="button">비밀번호 확인</a>
+                    </p>
                 </div>
             </div>
             
             <!-- product list -->
-            <div style="margin: 30px 0;">
+            <div style="margin: 50px 0;">
                 <h6 class="sub-title">상품 리스트</h6>
                 <div class="row">
                     <div class="col-xs-12 col-lg-2">
@@ -149,7 +153,7 @@
             </div>
             
             <!-- nav-tabs -->
-            <div style="margin: 30px 0;">
+            <div style="margin: 50px 0;">
                 <h6 class="sub-title">회원 및 비회원 아이디 및 비번 찾기 폼</h6>
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#">회원</a></li>
@@ -160,12 +164,151 @@
                 </div>
             </div>
             
+            <!-- paging -->
+            <div style="margin: 50px 0;">
+                <h6 class="sub-title">페이징</h6>
+                <nav aria-label="Page navigation" class="paging">
+                    <ul class="pagination">
+                       <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="icon-angle-double-left"></i></span>
+                            </a>
+                        </li>
+                        <li class="icon-left">
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="icon-angle-left"></i></span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="icon-right">
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="icon-angle-right"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="icon-angle-double-right"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             
-            <div class="test">
-                <a href="#">
-                    <img src="/assets/images/sub/item_img02.jpg" alt="">
-<!--                    <img src="/assets/images/sub/item_img02.jpg" alt="">-->
-                </a>
+            <div style="margin: 50px 0;">
+                <h6 class="sub-title">주문 항목 리스트 상세 펴기 닫기</h6>
+                
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-1">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                    Collapsible Group Item #1
+                                    <span class="close-text">상세 열기<i class="icon-down-circle"></i></span>
+                                    <span class="open-text">상세 닫기<i class="icon-up-circle"></i></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-1">
+                            <div class="panel-body">
+                                Content Item #1
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                    Collapsible Group Item #2
+                                    <span class="close-text">상세 열기<i class="icon-down-circle"></i></span>
+                                    <span class="open-text">상세 닫기<i class="icon-up-circle"></i></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-2">
+                            <div class="panel-body">
+                              Content Item #2
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading-3">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                    Collapsible Group Item #3
+                                    <span class="close-text">상세 열기<i class="icon-down-circle"></i></span>
+                                    <span class="open-text">상세 닫기<i class="icon-up-circle"></i></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-3">
+                            <div class="panel-body">
+                                Content Item #3
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+           
+            </div>
+            
+            <div style="margin: 60px 0;">
+                <h6 class="sub-title">테이블</h6>
+                <div class="table-wrap">
+                    <h5>배송회원 정보</h5>
+                    <table class="table table-bordered">
+                       <colgroup>
+                           <col>
+                           <col>
+                       </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>주문자</th>
+                                <td>무브먼트케이</td>
+                            </tr>
+                            <tr>
+                                <th>주문자 휴대폰</th>
+                                <td>010-1234-1234</td>
+                            </tr>
+                            <tr>
+                                <th>주문자 전화</th>
+                                <td>02-123-1234</td>
+                            </tr>
+                            <tr>
+                                <th>주문자 이메일</th>
+                                <td>mk_manager@mkdesign.co.kr</td>
+                            </tr>
+                            <tr>
+                                <th>입금은행정보</th>
+                                <td>하나은행 / 123-45678-98-01235 / 예금주 : 홍길동</td>
+                            </tr>
+                            <tr>
+                                <th>받으시는분</th>
+                                <td>무브먼트케이</td>
+                            </tr>
+                            <tr>
+                                <th>연락처</th>
+                                <td>010-1234-5678</td>
+                            </tr>
+                            <tr>
+                                <th>배송지 주소</th>
+                                <td>
+                                    01234 서울시 서초구 양재동 120-1<br>
+                                    <p class="highway-addr">(도로명:)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>요청사항</th>
+                                <td>요청사항 노출영역</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div><!--// Container -->
     </main><!--// Main Content -->
