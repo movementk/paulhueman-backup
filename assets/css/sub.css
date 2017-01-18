@@ -280,6 +280,14 @@ input[type=radio] {
     color: #fff;
     border-color: #2b2b2b;
     background-color: #2b2b2b; }
+  .btn-area p .btn-default {
+    width: 100%;
+    height: 40px;
+    font-size: 11px;
+    line-height: 38px; }
+    @media (min-width: 768px) {
+      .btn-area p .btn-default {
+        font-size: 12px; } }
 
 /* btn-addr */
 .btn-addr .btn {
@@ -505,19 +513,140 @@ input[type=radio] {
       .dot-list li:before {
         font-size: 15px; } }
 
-.test {
-  width: 450px;
-  height: 250px; }
-  .test a {
-    position: relative;
-    width: 100%;
-    height: 100%; }
-    .test a:hover img {
-      transform: scale(1.1);
-      transition: transform 300ms ease-in; }
-    .test a img {
-      display: block;
-      transform: scale(1);
-      transition: transform 300ms ease-out; }
+/* paging */
+.paging {
+  text-align: center; }
+  .paging .pagination {
+    margin: 0; }
+    .paging .pagination li a {
+      font-size: 13px;
+      color: #aaa;
+      padding: 0 9px;
+      line-height: 20px;
+      border: 0;
+      border-radius: 0; }
+      .paging .pagination li a span i {
+        font-size: 13px;
+        color: #2b2b2b;
+        line-height: 20px; }
+        .paging .pagination li a span i:before {
+          margin: 0;
+          width: 100%;
+          line-height: 20px; }
+    .paging .pagination li.active {
+      background: none; }
+      .paging .pagination li.active a {
+        color: #2b2b2b;
+        background: none; }
+    .paging .pagination li.icon-left a {
+      margin-right: 10px; }
+    .paging .pagination li.icon-right a {
+      margin-left: 10px; }
+
+/* panel-group */
+.panel-group .panel {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 50px;
+  box-shadow: none; }
+  .panel-group .panel + .panel {
+    margin-top: 0; }
+  .panel-group .panel:last-child {
+    margin-bottom: 0; }
+  .panel-group .panel .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    border-top: 1px solid #2b2b2b;
+    border-bottom: 1px solid #dfdfdf; }
+    .panel-group .panel .panel-heading .panel-title {
+      font-size: 0; }
+      .panel-group .panel .panel-heading .panel-title a {
+        display: block;
+        font-size: 12px;
+        color: #666;
+        font-weight: 400;
+        padding: 12px 10px 12px 17px;
+        border-bottom: 1px solid #dfdfdf; }
+        .panel-group .panel .panel-heading .panel-title a .order-num {
+          display: inline-block; }
+        .panel-group .panel .panel-heading .panel-title a span {
+          float: right;
+          clear: both;
+          font-size: 12px;
+          color: #2b2b2b;
+          font-style: normal; }
+          .panel-group .panel .panel-heading .panel-title a span i {
+            font-size: 12px;
+            margin-left: 10px; }
+          .panel-group .panel .panel-heading .panel-title a span.open-text {
+            display: inline-block; }
+          .panel-group .panel .panel-heading .panel-title a span.close-text {
+            display: none; }
+        .panel-group .panel .panel-heading .panel-title a.collapsed .open-text {
+          display: none; }
+        .panel-group .panel .panel-heading .panel-title a.collapsed .close-text {
+          display: inline-block; }
+  .panel-group .panel .panel-collapse .panel-body {
+    padding: 0;
+    border-top: 0; }
+
+/* table-wrap */
+.table-wrap h3, .table-wrap h4, .table-wrap h5 {
+  font-size: 12px;
+  color: #2b2b2b;
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .table-wrap h3, .table-wrap h4, .table-wrap h5 {
+      font-size: 13px; } }
+.table-wrap .table {
+  border: 0;
+  margin-bottom: 0;
+  border-top: 1px solid #2b2b2b; }
+  .table-wrap .table tbody th {
+    width: 35%;
+    font-size: 12px;
+    color: #2b2b2b;
+    font-weight: 400;
+    vertical-align: middle;
+    padding: 15px 0 15px 20px;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f8f8; }
+    @media (min-width: 768px) {
+      .table-wrap .table tbody th {
+        width: 23%; } }
+  .table-wrap .table tbody td {
+    width: 65%;
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+    vertical-align: middle;
+    padding: 15px 0 15px 10px;
+    border: 0;
+    border-bottom: 1px solid #ddd; }
+    .table-wrap .table tbody td .higway-addr {
+      display: inline-block; }
+    @media (min-width: 768px) {
+      .table-wrap .table tbody td {
+        width: 77%;
+        padding-left: 30px; } }
+
+/* cash-receipt */
+.cash-receipt {
+  font-size: 0; }
+  .cash-receipt dt {
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+    display: inline-block; }
+    .cash-receipt dt:after {
+      content: ":";
+      padding: 0 3px; }
+  .cash-receipt dd {
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+    display: inline-block; }
 
 /*# sourceMappingURL=sub.css.map */

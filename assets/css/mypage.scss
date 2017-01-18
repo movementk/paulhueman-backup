@@ -1,0 +1,375 @@
+@import 'common';
+
+.mypage {
+    .lnb {
+        display: none;
+        @media(min-width: $lg) {
+            display: block;
+        }
+    }
+}
+
+/* my-page */
+.my-page-info {
+    .mypage-list {
+        .row {
+            > div + div {
+                a {
+                    display: block;
+                    margin-top: 60px;
+                    @media(min-width: $sm) {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        a {
+            text-align: center;
+            dl {
+                dt {
+                    margin-bottom: 30px;
+                    img {
+                        display: inline-block;
+                    }
+                }
+                dd {
+                    font-size: 14px;
+                    color: #2b2b2b;
+                    font-weight: 800;
+                    margin-bottom: 25px;
+                    @include lato();
+                }
+                @media(min-width: $sm) {
+                    padding-top: 45px;
+                    &.point {
+                        margin-top: 45px;
+                    }
+                    &.coupon {
+                        margin-top: 45px;
+                        dt {
+                            padding-top: 2px;
+                            padding-bottom: 1px;
+                        }
+                    }
+                }
+            }
+            h3 {
+                font-size: 13px;
+                color: #2b2b2b;
+                margin-bottom: 15px;
+            }
+            .summary {
+                font-size: 11px;
+                color: #666;
+                line-height: 20px;
+                @media(min-width: $sm) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+/* mypage-header page-header 공통 */
+.mypage-header {
+    @media(min-width: $lg) {
+        text-align: left;
+    }
+}
+/* pw-confirm */
+.pw-confirm {
+    padding-bottom: 265px !important;
+    .pw-form {
+        .form-group {
+            .user-name {
+                height: 40px;
+                font-size: 11px;
+                color: #666;
+                line-height: 40px;
+                padding-left: 11px;
+                @media(min-width: $sm) {
+                    font-size: 12px;
+                }
+                @media(min-width: $md) {
+                    padding-left: 16px;
+                }
+                @media(min-width: $lg) {
+                    padding-left: 0;
+                }
+            }
+            .form-control {
+                margin: 10px 0;
+            }
+            @media(min-width: $sm) {
+                width: 470px;
+                margin: 0 auto;
+            }
+        }
+        .btn-area {
+            @media(min-width: $sm) {
+                width: 470px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+/* ordered-product */
+.ordered-product {
+    overflow: hidden;
+    border-bottom: 1px solid #dfdfdf;
+    > div {
+        width: 50%;
+        float: left;
+        &.product-img {
+            padding: 30px 20px;
+            text-align: center;
+            img {
+                display: inline-block;
+            }
+            @media(min-width: $sm) {
+                width: 23%;
+                text-align: left;
+            }
+        }
+        &.product-details {
+            padding: 30px 0 30px 20px;
+            .product-code {
+                font-size: 13px;
+                color: #2b2b2b;
+                line-height: 18px;
+                @include maven();
+            }
+            .inline-dl {
+                font-size: 0;
+                dt {
+                    display: inline-block;
+                    font-size: 12px;
+                    color: #666;
+                    font-weight: 400;
+                    line-height: 18px;
+                    @include maven();
+                    &:after {
+                        content: ":";
+                        font-size: 12px;
+                        color: #666;
+                        padding: 0 3px;
+                        line-height: 18px;
+                    }
+                }
+                dd {
+                    display: inline-block;
+                    font-size: 12px;
+                    color: #666;
+                    font-weight: 400;
+                    line-height: 18px;
+                    @include maven();
+                }
+            }
+            @media(min-width: $sm) {
+                width: 77%;
+                padding-left: 30px;
+            }
+        }
+    }
+}
+/* table-dl */
+.table-dl {
+    overflow: hidden;
+    dt {
+        float: left;
+        clear: both;
+        width: 50%;
+        font-size: 12px;
+        color: #2b2b2b;
+        text-align: left;
+        font-weight: 400;
+        line-height: 25px;
+        padding-left: 20px;
+        background-color: #f8f8f8;
+        &.first {
+            padding-top: 5px;
+        }
+        &.last {
+            padding-bottom: 5px;
+        }
+        @media(min-width: $sm) {
+            width: 23%;
+        }
+    }
+    dd {
+        float: left;
+        width: 50%;
+        font-size: 12px;
+        color: #666;
+        text-align: left;
+        font-weight: 400;
+        line-height: 25px;
+        padding-left: 25px;
+        &.first {
+            padding-top: 5px;
+        }
+        &.last {
+            padding-bottom: 5px;
+        }
+        @media(min-width: $sm) {
+            width: 77%;
+            padding-left: 30px;
+        }
+    }
+}
+/* panel-group 주문정보 공통 */
+.payment {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    @media(min-width: $lg) {
+        margin-bottom: 100px;
+    }
+    .sum-bg {
+        background-color: #efefef;
+    }
+    .total-bg {
+        background-color: #2b2b2b;
+    }
+    .sum-list {
+        overflow: hidden;
+        padding: 24px 0 19px;
+        li {
+            float: left;
+            width: 33.33%;
+            text-align: center;
+            &:nth-of-type(1) {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    top: 38%;
+                    right: -10px;
+                    color: #2b2b2b;
+                    content: "+";
+                    @media(min-width: $sm) {
+                        top: 63%;
+                    }
+                }
+            }
+            &:nth-of-type(2) {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    top: 37%;
+                    right: 0;
+                    color: #2b2b2b;
+                    content: "-";
+                    @media(min-width: $sm) {
+                        top: 62%;
+                    }
+                }
+            }
+            .sum {
+                dt {
+                    font-size: 12px;
+                    color: #666;
+                    font-weight: 400;
+                    margin-bottom: 15px;
+                }
+                dd {
+                    font-size: 12px;
+                    color: #2b2b2b;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .total {
+        text-align: center;
+        padding: 20px 0 18px;
+        dt {
+            font-size: 12px;
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        dd {
+            font-size: 16px;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
+
+
+/* order-list */
+.order-list {
+    .my-order-list {
+        .panel-group {
+            .panel {
+                .panel-collapse {
+                    .panel-body {
+                        .table-wrap {
+                            margin-top: 50px;
+                            @media(min-width: $sm) {
+                                margin-top: 60px;
+                            }
+                            @media(min-width: $lg) {
+                                margin-top: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
