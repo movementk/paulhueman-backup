@@ -125,6 +125,18 @@
       "css": "angle-double-left",
       "code": 61696,
       "src": "fontawesome"
+    },
+    {
+      "uid": "a7e3ce91275bb77c0f4ec44a548b325c",
+      "css": "up-circle",
+      "code": 59403,
+      "src": "websymbols"
+    },
+    {
+      "uid": "e160a7e42e4e818463fd5a8607b9f608",
+      "css": "down-circle",
+      "code": 59404,
+      "src": "websymbols"
     }
   ]
 }
