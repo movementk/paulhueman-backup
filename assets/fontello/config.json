@@ -137,6 +137,12 @@
       "css": "down-circle",
       "code": 59404,
       "src": "websymbols"
+    },
+    {
+      "uid": "4f3b31017c63ba04dc4f78ce7a8f02b1",
+      "css": "upload",
+      "code": 61487,
+      "src": "mfglabs"
     }
   ]
 }

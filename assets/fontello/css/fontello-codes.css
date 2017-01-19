@@ -13,6 +13,7 @@
 .icon-up-circle:before { content: '\e80b'; } /* '' */
 .icon-down-circle:before { content: '\e80c'; } /* '' */
 .icon-menu:before { content: '\f008'; } /* '' */
+.icon-upload:before { content: '\f02f'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-angle-double-left:before { content: '\f100'; } /* '' */
 .icon-angle-double-right:before { content: '\f101'; } /* '' */
