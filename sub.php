@@ -204,13 +204,13 @@
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="heading-1">
-                            <h4 class="panel-title">
+                            <div class="panel-title">
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
                                     Collapsible Group Item #1
                                     <span class="close-text">상세 열기<i class="icon-down-circle"></i></span>
                                     <span class="open-text">상세 닫기<i class="icon-up-circle"></i></span>
                                 </a>
-                            </h4>
+                            </div>
                         </div>
                         <div id="collapse-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-1">
                             <div class="panel-body">
@@ -221,13 +221,13 @@
                 
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="heading-2">
-                            <h4 class="panel-title">
+                            <div class="panel-title">
                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
                                     Collapsible Group Item #2
                                     <span class="close-text">상세 열기<i class="icon-down-circle"></i></span>
                                     <span class="open-text">상세 닫기<i class="icon-up-circle"></i></span>
                                 </a>
-                            </h4>
+                            </div>
                         </div>
                         <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-2">
                             <div class="panel-body">
@@ -238,13 +238,13 @@
                     
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="heading-3">
-                            <h4 class="panel-title">
+                            <div class="panel-title">
                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
                                     Collapsible Group Item #3
                                     <span class="close-text">상세 열기<i class="icon-down-circle"></i></span>
                                     <span class="open-text">상세 닫기<i class="icon-up-circle"></i></span>
                                 </a>
-                            </h4>
+                            </div>
                         </div>
                         <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-3">
                             <div class="panel-body">
