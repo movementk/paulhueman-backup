@@ -149,6 +149,12 @@
       "css": "attach",
       "code": 59405,
       "src": "websymbols"
+    },
+    {
+      "uid": "fa0118a65fc8dee739469f6901bbd189",
+      "css": "level-down",
+      "code": 59406,
+      "src": "entypo"
     }
   ]
 }
