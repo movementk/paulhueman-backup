@@ -11,7 +11,7 @@
             <div class="page-path">
                 <ol class="breadcrumb">
                     <li><a href="/"><i class="icon-home"></i></a></li>
-                    <li class="active"><a href="/mypage/my_page.php">MYPAGE</a></li>
+                    <li class="active">MYPAGE</li>
                 </ol>
             </div>
             <div class="page-header">

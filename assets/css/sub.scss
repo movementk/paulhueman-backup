@@ -30,6 +30,18 @@ input[type=radio] {
     margin-top: 3px !important;
     margin-right: 5px !important;
 }
+textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    &:hover {
+        box-shadow: none;
+    }
+    &:focus {
+        border-color: #000;
+        box-shadow: none;
+    }
+}
 .check {
     input[type=checkbox] {
         vertical-align: middle;
@@ -279,11 +291,9 @@ input[type=radio] {
                 margin-right: 0;
             }
             @media(min-width: $sm) {
+                width: 170px;
                 font-size: 12px;
                 margin-right: 20px;
-            }
-            @media(min-width: $md) {
-                width: 172px;
             }
         }
         .btn-success {
@@ -801,8 +811,31 @@ input[type=radio] {
     }
 }
 
-
-
+/* inline-dl */
+.inline-dl {
+    font-size: 0;
+    dt {
+        display: inline-block;
+        font-size: 12px;
+        color: #666;
+        font-weight: 400;
+        @include maven();
+        &:after {
+            content: ":";
+            font-size: 12px;
+            color: #666;
+            padding: 0 3px;
+            line-height: 18px;
+        }
+    }
+    dd {
+        display: inline-block;
+        font-size: 12px;
+        color: #666;
+        font-weight: 400;
+        @include maven();
+    }
+}
 
 
 

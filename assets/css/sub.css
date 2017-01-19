@@ -47,6 +47,16 @@ input[type=radio] {
   margin-top: 3px !important;
   margin-right: 5px !important; }
 
+textarea {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #dfdfdf; }
+  textarea:hover {
+    box-shadow: none; }
+  textarea:focus {
+    border-color: #000;
+    box-shadow: none; }
+
 .check input[type=checkbox] {
   vertical-align: middle;
   margin-top: -1px;
@@ -255,11 +265,9 @@ input[type=radio] {
       margin-right: 0; }
     @media (min-width: 768px) {
       .btn-area p .btn-sm {
+        width: 170px;
         font-size: 12px;
         margin-right: 20px; } }
-    @media (min-width: 992px) {
-      .btn-area p .btn-sm {
-        width: 172px; } }
   .btn-area p .btn-success {
     font-size: 11px;
     color: #fff;
@@ -648,5 +656,27 @@ input[type=radio] {
     color: #666;
     font-weight: 400;
     display: inline-block; }
+
+/* inline-dl */
+.inline-dl {
+  font-size: 0; }
+  .inline-dl dt {
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+    font-family: 'Maven Pro', sans-serif; }
+    .inline-dl dt:after {
+      content: ":";
+      font-size: 12px;
+      color: #666;
+      padding: 0 3px;
+      line-height: 18px; }
+  .inline-dl dd {
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+    font-family: 'Maven Pro', sans-serif; }
 
 /*# sourceMappingURL=sub.css.map */
