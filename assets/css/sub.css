@@ -367,33 +367,67 @@ textarea {
           line-height: 25px; }
         .lnb ul li.active a {
           color: #2b2b2b;
-          background-color: #fff;
+          background: none;
           border-bottom: 2px solid #aaa; } }
 
+/* glasses-list */
 .glasses-list {
   margin-top: 30px; }
   .glasses-list .glasses-item {
     text-align: center;
-    margin-bottom: 80px; }
+    margin-bottom: 50px; }
+    @media (min-width: 768px) {
+      .glasses-list .glasses-item {
+        margin-bottom: 70px; } }
+    @media (min-width: 1280px) {
+      .glasses-list .glasses-item {
+        margin-bottom: 100px; } }
     .glasses-list .glasses-item .bx-wrapper {
       position: relative; }
       .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a {
+        position: relative;
         display: block;
-        height: 180px;
-        line-height: 180px;
-        background: none; }
-        .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a img {
-          display: inline-block; }
-        .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a:hover {
-          display: block;
-          background-image: url(/assets/images/sub/item_img02.jpg);
-          background-repeat: no-repeat;
-          background-position: 50% 50%; }
-          .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a:hover img {
-            display: none; }
+        height: 220px; }
+        .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a figure {
+          display: table;
+          width: 100%;
+          height: 200px; }
+          .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a figure > .glasses {
+            display: table-cell;
+            height: 200px;
+            vertical-align: middle;
+            text-align: center; }
+            .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a figure > .glasses > p {
+              text-align: center;
+              opacity: 1;
+              transition: all .5s; }
+              .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a figure > .glasses > p .img-responsive {
+                margin: 0 auto; }
+              .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a figure > .glasses > p + p {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                opacity: 0; }
+          .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a figure figcaption {
+            display: table-row; }
+            .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a figure figcaption p {
+              display: table-cell;
+              font-size: 12px;
+              color: #2b2b2b;
+              font-weight: 400;
+              font-family: 'Lato', sans-serif; }
+        .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a:hover figure > .glasses > p {
+          opacity: 0; }
+          .glasses-list .glasses-item .bx-wrapper .bx-viewport ul li a:hover figure > .glasses > p + p {
+            opacity: 1; }
       .glasses-list .glasses-item .bx-wrapper .bx-controls {
         position: absolute;
-        bottom: -34px;
+        bottom: -24px;
         left: 50%;
         margin-left: -75px; }
         .glasses-list .glasses-item .bx-wrapper .bx-controls .bx-controls-direction {
@@ -402,7 +436,7 @@ textarea {
             overflow: hidden;
             display: inline-block; }
             .glasses-list .glasses-item .bx-wrapper .bx-controls .bx-controls-direction a i {
-              font-size: 12px;
+              font-size: 15px;
               color: #ccc;
               font-weight: bold; }
               .glasses-list .glasses-item .bx-wrapper .bx-controls .bx-controls-direction a i:hover {
@@ -411,6 +445,13 @@ textarea {
               float: left; }
             .glasses-list .glasses-item .bx-wrapper .bx-controls .bx-controls-direction a.bx-next {
               float: right; }
+    .glasses-list .glasses-item .glasses-color {
+      font-size: 12px;
+      color: #2b2b2b;
+      line-height: 0;
+      font-weight: 400;
+      margin-top: 15px;
+      font-family: 'Lato', sans-serif; }
   @media (min-width: 1280px) {
     .glasses-list {
       margin-top: 0; } }
