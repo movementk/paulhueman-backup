@@ -78,17 +78,55 @@
                                         <ul class="bxslider">
                                             <li>
                                                 <a href="#">
-                                                    <img src="/assets/images/sub/item_img01.jpg" class="img-responsive" alt="">
+                                                    <figure>
+                                                        <div class="glasses">
+                                                            <p>
+                                                                <img src="/assets/images/sub/item_img01.jpg" class="img-responsive basic-img" alt="">
+                                                            </p>
+                                                            <p style="background-image: url(/assets/images/sub/item_img_hover.jpg)">
+                                                            </p>
+                                                        </div>
+                                                        <figcaption>
+                                                            <p>PHS - 1089D Col.5</p>
+                                                        </figcaption>
+                                                    </figure>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <img src="/assets/images/sub/item_img03.jpg" class="img-responsive" alt="">
+                                                    <figure>
+                                                        <div class="glasses">
+                                                            <p>
+                                                                <img src="/assets/images/sub/item_img02.jpg" class="img-responsive basic-img" alt="">
+                                                            </p>
+                                                            <p style="background-image: url(/assets/images/sub/item_img_hover.jpg)">
+                                                            </p>
+                                                        </div>
+                                                        <figcaption>
+                                                            <p>PHS - 1089D Col.5</p>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <figure>
+                                                        <div class="glasses">
+                                                            <p>
+                                                                <img src="/assets/images/sub/item_img03.jpg" class="img-responsive basic-img" alt="">
+                                                            </p>
+                                                            <p style="background-image: url(/assets/images/sub/item_img_hover.jpg)">
+                                                            </p>
+                                                        </div>
+                                                        <figcaption>
+                                                            <p>PHS - 1089D Col.5</p>
+                                                        </figcaption>
+                                                    </figure>
                                                 </a>
                                             </li>
                                         </ul>
-                                        <div class="glasses-info">
-                                            PHS - 1089D Col.5 <br>
+                                        <div class="glasses-color">
+                                            <br>
                                             5 COLORS
                                         </div>
                                     </div>
@@ -98,17 +136,39 @@
                                         <ul class="bxslider">
                                             <li>
                                                 <a href="#">
-                                                    <img src="/assets/images/sub/item_img01.jpg" class="img-responsive" alt="">
+                                                    <figure>
+                                                        <div class="glasses">
+                                                            <p>
+                                                                <img src="/assets/images/sub/item_img04.jpg" class="img-responsive basic-img" alt="">
+                                                            </p>
+                                                            <p style="background-image: url(/assets/images/sub/item_img_hover.jpg)">
+                                                            </p>
+                                                        </div>
+                                                        <figcaption>
+                                                            <p>PHS - 1089D Col.5</p>
+                                                        </figcaption>
+                                                    </figure>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <img src="/assets/images/sub/item_img03.jpg" class="img-responsive" alt="">
+                                                    <figure>
+                                                        <div class="glasses">
+                                                            <p>
+                                                                <img src="/assets/images/sub/item_img05.jpg" class="img-responsive basic-img" alt="">
+                                                            </p>
+                                                            <p style="background-image: url(/assets/images/sub/item_img_hover.jpg)">
+                                                            </p>
+                                                        </div>
+                                                        <figcaption>
+                                                            <p>PHS - 1089D Col.5</p>
+                                                        </figcaption>
+                                                    </figure>
                                                 </a>
                                             </li>
                                         </ul>
-                                        <div class="glasses-info">
-                                            PHS - 1089D Col.5 <br>
+                                        <div class="glasses-color">
+                                            <br>
                                             5 COLORS
                                         </div>
                                     </div>
@@ -118,17 +178,39 @@
                                         <ul class="bxslider">
                                             <li>
                                                 <a href="#">
-                                                    <img src="/assets/images/sub/item_img01.jpg" class="img-responsive" alt="">
+                                                    <figure>
+                                                        <div class="glasses">
+                                                            <p>
+                                                                <img src="/assets/images/sub/item_img06.jpg" class="img-responsive basic-img" alt="">
+                                                            </p>
+                                                            <p style="background-image: url(/assets/images/sub/item_img_hover.jpg)">
+                                                            </p>
+                                                        </div>
+                                                        <figcaption>
+                                                            <p>PHS - 1089D Col.5</p>
+                                                        </figcaption>
+                                                    </figure>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <img src="/assets/images/sub/item_img03.jpg" class="img-responsive" alt="">
+                                                    <figure>
+                                                        <div class="glasses">
+                                                            <p>
+                                                                <img src="/assets/images/sub/item_img07.jpg" class="img-responsive basic-img" alt="">
+                                                            </p>
+                                                            <p style="background-image: url(/assets/images/sub/item_img_hover.jpg)">
+                                                            </p>
+                                                        </div>
+                                                        <figcaption>
+                                                            <p>PHS - 1089D Col.5</p>
+                                                        </figcaption>
+                                                    </figure>
                                                 </a>
                                             </li>
                                         </ul>
-                                        <div class="glasses-info">
-                                            PHS - 1089D Col.5 <br>
+                                        <div class="glasses-color">
+                                            <br>
                                             5 COLORS
                                         </div>
                                     </div>
@@ -318,7 +400,7 @@
     <script>
         (function($) {
             $('.bxslider').bxSlider({
-                mode: 'fade',
+//                mode: 'fade',
                 controls: true,
                 pager: false,
                 prevText: '<i class="icon-left-open-mini"></i>',
