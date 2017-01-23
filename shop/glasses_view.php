@@ -15,7 +15,7 @@
                     <li class="active">SUNGLASSES</li>
                 </ol>
             </div>
-            <div class="g-view sunglasses-view">
+            <div class="g-view glasses-view">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-lg-2">
                         <div class="lnb">
