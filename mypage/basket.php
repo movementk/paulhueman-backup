@@ -5,24 +5,24 @@
 <body class="sub mypage">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/aside.php'); ?>
-    <main id="content" class="order-sucess">
+    <main id="content" class="basket">
         <div class="container">
             <!-- page-path -->
             <div class="page-path">
                 <ol class="breadcrumb">
                     <li><a href="/"><i class="icon-home"></i></a></li>
                     <li><a href="/mypage/my_page.php">MYPAGE</a></li>
-                    <li class="active">ORDER COMPLETED</li>
+                    <li class="active">SHOPPING CART</li>
                 </ol>
             </div>
-            <div class="order-info">
+            <div class="basket-info">
                 <div class="row">
                     <div class="col-xs-12 col-lg-2">
                         <div class="lnb">
                             <h2 class="visible-lg">MY PAGE</h2>
                             <ul>
                                 <li><a href="#">ORDERS</a></li>
-                                <li class="active"><a href="#">CART</a></li>
+                                <li><a href="#">CART</a></li>
                                 <li><a href="#">PROFILE</a></li>
                                 <li><a href="#">POINT</a></li>
                                 <li><a href="#">COUPON</a></li>
@@ -32,23 +32,32 @@
                     </div>
                     <div class="col-xs-12 col-lg-10">
                         <div class="page-header">
-                            <h2>ORDER COMPLETED</h2>
+                            <h2>SHOPPING CART</h2>
                         </div>
-                        <div class="sucess">
-                            <h3>고객님의 주문이 완료 되었습니다.</h3>
-                            <dl>
-                                <dt>ORDER NUMBER</dt>
-                                <dd>20170123-0000028</dd>
-                                <dt>ORDER DATE</dt>
-                                <dd>2017-01-23 15:15:02</dd>
-                                <dt>현금영수증 발행</dt>
-                                <dd>신청 (개인) 01011111111</dd>
-                            </dl>
-                        </div>
-                        <div class="btn-area">
-                            <p>
-                                <a href="#" class="btn btn-gray btn-lg" role="button">쇼핑계속하기</a>
-                            </p>
+                        <div class="my-basket">
+                            <h3>ITEMS</h3>
+                            <ul class="basket-list">
+                                <li>
+                                    <p class="product-img">
+                                        <img src="/assets/images/mypage/product_item_img01.gif" class="img-responsive" alt="구매상품 이미지">
+                                    </p>
+                                    <ul class="product-info">
+                                        <li class="name-color">
+                                            <h4>PHF-5089D Col.4-1</h4>
+                                            <dl>
+                                                <dt>COLOR</dt>
+                                                <dd>WHITE</dd>
+                                            </dl>
+                                        </li>
+                                        <li class="quantity">1</li>
+                                        <li class="modify">
+                                            <a href="#">EDIT</a>
+                                            <a href="#">DELETE</a>
+                                        </li>
+                                        <li class="amount">204,000</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
