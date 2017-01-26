@@ -242,10 +242,10 @@ textarea {
     display: block;
     margin: 0 auto;
     width: 300px;
-    height: 35px;
+    height: 40px;
     font-size: 12px;
     color: #666;
-    line-height: 33px;
+    line-height: 38px;
     text-align: center;
     border: 1px solid #aaa; }
     @media (min-width: 768px) {
@@ -722,5 +722,28 @@ textarea {
     color: #666;
     font-weight: 400;
     font-family: 'Maven Pro', sans-serif; }
+
+/* total */
+.total {
+  overflow: hidden; }
+  .total dt {
+    width: 80px;
+    float: left;
+    clear: both;
+    font-size: 13px;
+    color: #acacac;
+    font-weight: 300;
+    line-height: 25px; }
+  .total dd {
+    float: left;
+    font-size: 13px;
+    color: #666;
+    font-weight: 300;
+    line-height: 25px; }
+  @media (min-width: 768px) {
+    .total dt {
+      font-size: 14px; }
+    .total dd {
+      font-size: 14px; } }
 
 /*# sourceMappingURL=sub.css.map */

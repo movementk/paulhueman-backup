@@ -268,10 +268,10 @@ textarea {
             display: block;
             margin: 0 auto;
             width: 300px;
-            height: 35px;
+            height: 40px;
             font-size: 12px;
             color: #666;
-            line-height: 33px;
+            line-height: 38px;
             text-align: center;
             border: 1px solid #aaa;
             @media(min-width: $sm) {
@@ -896,7 +896,34 @@ textarea {
     }
 }
 
-
+/* total */
+.total {
+    overflow: hidden;
+    dt {
+        width: 80px;
+        float: left;
+        clear: both;
+        font-size: 13px;
+        color: #acacac;
+        font-weight: 300;
+        line-height: 25px;
+    }
+    dd {
+        float: left;
+        font-size: 13px;
+        color: #666;
+        font-weight: 300;
+        line-height: 25px;
+    }
+    @media(min-width: $sm) {
+        dt {
+            font-size: 14px;
+        }
+        dd {
+            font-size: 14px;
+        }
+    }
+}
 
 
 

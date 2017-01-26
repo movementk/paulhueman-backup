@@ -572,31 +572,8 @@
                 }
                 .total {
                     margin-top: 30px;
-                    overflow: hidden;
-                    dt {
-                        width: 80px;
-                        float: left;
-                        clear: both;
-                        font-size: 13px;
-                        color: #acacac;
-                        font-weight: 300;
-                        line-height: 25px;
-                    }
-                    dd {
-                        float: left;
-                        font-size: 13px;
-                        color: #666;
-                        font-weight: 300;
-                        line-height: 25px;
-                    }
                     @media(min-width: $sm) {
                         margin-top: 45px;
-                        dt {
-                            font-size: 14px;
-                        }
-                        dd {
-                            font-size: 14px;
-                        }
                     }
                 }
             }
@@ -733,6 +710,135 @@
     }
 }
 
+/* 장바구니 주문서작성 공통 */
+.my-basket {
+    h3 {
+        font-size: 12px;
+        color: #2b2b2b;
+        margin-bottom: 10px;
+        @media(min-width: $sm) {
+            font-size: 13px;
+        }
+    }
+    .basket-list {
+        & > .basket-item {
+            display: table;
+            width: 100%;
+            padding: 22px 0;
+            border-bottom: 1px solid #dfdfdf;
+            &:first-child {
+                border-top: 1px solid #2b2b2b;
+            }
+            @media(min-width: $sm) {
+                padding: 30px 0;
+            }
+            @media(min-width: $md) {
+                padding: 35px 0;
+            }
+            > div {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .figure {
+                width: 50%;
+                @media(min-width: $sm) {
+                    width: 20%;
+                }
+                @media(min-width: $md) {
+                    width: 15%;
+                }
+                p {
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        max-width: 100px;
+                        height: auto;
+                    }
+                }
+            }
+            .details {
+                width: 50%;
+                padding-left: 20px;
+                @media(min-width: $sm) {
+                    width: 80%;
+                }
+                @media(min-width: $md) {
+                    width: 85%;
+                }
+                .details-content {
+                    .p-info {
+                        h4 {
+                            font-size: 13px;
+                            color: #2b2b2b;
+                            @include maven();
+                            line-height: 18px;
+                        }
+                        dl {
+                            dt {
+                                display: inline-block;
+                                font-size: 13px;
+                                color: #666;
+                                font-weight: 400;
+                                line-height: 18px;
+                                @include maven();
+                                &:after {
+                                    content: ":";
+                                    padding: 0 5px;
+                                }
+                            }
+                            dd {
+                                display: inline-block;
+                                font-size: 13px;
+                                color: #666;
+                                font-weight: 400;
+                                line-height: 18px;
+                                @include maven();
+                            }
+                        }
+                    }
+                    .quantity {
+                        > p {
+                            display: inline-block;
+                            font-size: 12px;
+                            color: #2b2b2b;
+                            font-weight: 400;
+                            padding-bottom: 5px;
+                            margin: 15px 0;
+                            border-bottom: 1px solid #ababab;
+                            @media(min-width: $sm) {
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .price {
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #666;
+                    }
+                }
+            }
+        }
+        @media(min-width: $sm) {
+            & > .basket-item {
+                .details {
+                    > .details-content {
+                        > div {
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .total {
+        margin-top: 70px;
+        @media(min-width: $sm) {
+            margin-top: 50px;
+        }
+    }
+}
+
 /* basket */
 .basket {
     .basket-info {
@@ -742,34 +848,449 @@
                 margin-bottom: 100px;
             }
         }
-        .basket-list {
-            > li {
-                overflow: hidden;
-                display: block;
-                padding: 22px 0;
-                vertical-align: middle;
-                border-bottom: 1px solid #dfdfdf;
-                &:first-child {
-                    border-top: 1px solid #2b2b2b;
-                }
-                .product-img {
-                    float: left;
-                    width: 40%;
-                    img {
-                        margin: 0 auto;
+        .my-basket {
+            .basket-list {
+                .basket-item {
+                    .details {
+                        .details-content {
+                            .quantity {
+                                @media(min-width: $sm) {
+                                    margin-left: 105px;
+                                }
+                            }
+                            .edit {
+                                > a {
+                                    display: inline-block;
+                                    font-size: 12px;
+                                    color: #666;
+                                    font-weight: 400;
+                                    & + a {
+                                        margin-left: 15px;
+                                        @media(min-width: $sm) {
+                                            margin-left: 35px;
+                                        }
+                                    }
+                                }
+                                @media(min-width: $sm) {
+                                    margin-left: 40px;
+                                }
+                            }
+                            .price {
+                                display: none;
+                                @media(min-width: $md) {
+                                    display: inline-block;
+                                    padding-left: 300px;
+                                }
+                            }
+                        }
                     }
                 }
-                .product-info {
-                    float: left;
-                    width: 60%;
+                @media(min-width: $sm) {
+                    & > .basket-item {
+                        .details {
+                            > .details-content {
+                                > div {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
                 }
+            }
+            .delete-all {
+                display: inline-block;
+                font-size: 13px;
+                color: #2b2b2b;
+                padding-bottom: 7px;
+                margin-top: 45px;
+                box-shadow: 0 1px 0 #d7d7d7;
+                border-bottom: 1px solid #ababab;
+                @media(min-width: $sm) {
+                    margin-top: 50px;
+                }
+            }
+            .total {
+                margin-top: 70px;
+                @media(min-width: $sm) {
+                    margin-top: 50px;
+                }
+            }
+        }
+        .btn-area {
+            margin-top: 70px;
+            p {
+                .btn-lg {
+                    height: 40px;
+                    line-height: 38px;
+                }
+            }
+            @media(min-width: $sm) {
+                p {
+                    .btn-lg {
+                        width: 170px;
+                    }
+                }
+            }
+            @media(min-width: $md) {
+                margin-top: 50px;
             }
         }
     }
 }
 
-
-
+/* order-input */
+.order-input {
+    .order-items {
+        .my-basket {
+            .basket-list {
+                .basket-item {
+                    .details {
+                        .details-content {
+                            .quantity {
+                                @media(min-width: $sm) {
+                                    margin-left: 190px;
+                                }
+                                @media(min-width: $md) {
+                                    margin-left: 105px;
+                                }
+                            }
+                            .price {
+                                @media(min-width: $sm) {
+                                    margin-left: 90px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .total {
+                margin-top: 30px;
+                @media(min-width: $sm) {
+                    margin-top: 45px;
+                }
+            }
+        }
+        .input-write {
+            h3 {
+                font-size: 12px;
+                color: #2b2b2b;
+                margin-bottom: 10px;
+                @media(min-width: $sm) {
+                    font-size: 13px;
+                }
+            }
+            div  {
+                > div {
+                    > .table-wrap {
+                        .table {
+                            border-top: 1px solid #e9e9e9;
+                            tbody {
+                                tr {
+                                    &:first-child {
+                                        th {
+                                            padding-top: 25px;
+                                        }
+                                        td {
+                                            padding-top: 25px;
+                                        }
+                                    }
+                                    &:last-child {
+                                        th {
+                                            border-bottom: 1px solid #e9e9e9;
+                                            padding-bottom: 25px;
+                                        }
+                                        td {
+                                            border-bottom: 1px solid #e9e9e9;
+                                            padding-bottom: 25px;
+                                        }
+                                    }
+                                    th {
+                                        width: 25%;
+                                        padding-top: 10px;
+                                        padding-bottom: 10px;
+                                        border: 0;
+                                        background: none;
+                                        color: #2b2b2b;
+                                        label {
+                                            color: #2b2b2b;
+                                        }
+                                        &.addr {
+                                            padding-top: 15px;
+                                            vertical-align: top;
+                                        }
+                                        &.email {
+                                            padding-top: 15px;
+                                            vertical-align: top;
+                                            @media(min-width: $sm) {
+                                                vertical-align: middle;
+                                                padding-top: 10px;
+                                            }
+                                        }
+                                        @media(min-width: $sm) {
+                                            width: 20%;
+                                        }
+                                        @media(min-width: $md) {
+                                            
+                                        }
+                                    }
+                                    td {
+                                        width: 75%;
+                                        padding-top: 10px;
+                                        padding-bottom: 10px;
+                                        padding-right: 10px;
+                                        border: 0;
+                                        @media(min-width: $md) {
+                                            padding-right: 100px;
+                                        }
+                                        .form-group {
+                                            .form-control {
+                                                height: 30px;
+                                                padding: 5px;
+                                                @media(min-width: $sm) {
+                                                    width: 250px;
+                                                }
+                                            }
+                                        }
+                                        &.addr {
+                                            .form-group {
+                                                overflow: hidden;
+                                                .form-control {
+                                                    margin-bottom: 5px;
+                                                    &:first-child {
+                                                        float: left;
+                                                        width: 60%;
+                                                        margin-right: 10px;
+                                                        @media(min-width: $sm) {
+                                                           width: 175px; 
+                                                        }
+                                                    }
+                                                    @media(min-width: $sm) {
+                                                        width: 530px;
+                                                    }
+                                                    @media(min-width: $md) {
+                                                        width: 100%;
+                                                    }
+                                                    .btn-addr {
+                                                        float: left;
+                                                    }
+                                                    &:last-child {
+                                                        margin-bottom: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.email {
+                                            .form-group {
+                                                .form-control {
+                                                    @media(min-width: $sm) {
+                                                        display: inline-block;
+                                                    }
+                                                }
+                                                p {
+                                                    display: block;
+                                                    font-size: 11px;
+                                                    color: #666;
+                                                    font-weight: 300;
+                                                    line-height: 16px;
+                                                    margin-top: 10px;
+                                                    @media(min-width: $sm) {
+                                                        display: inline-block;
+                                                        margin-left: 10px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.message {
+                                            .form-group {
+                                                .form-control {
+                                                    @media(min-width: $sm) {
+                                                        width: 530px;
+                                                    }
+                                                    @media(min-width: $md) {
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        @media(min-width: $sm) {
+                                            width: 80%;
+                                        }
+                                        @media(min-width: $md) {
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .orderer {
+                margin-top: 80px;
+            }
+            .shipping {
+                margin-top: 60px;
+                h3 {
+                    display: block;
+                    @media(min-width: $sm) {
+                        display: inline-block;
+                    }
+                }
+                .new-addr {
+                    > label {
+                        font-size: 11px;
+                        color: #666;
+                        font-weight: 300;
+                        display: block;
+                        margin-bottom: 10px;
+                        input {
+                            margin: 0 !important;
+                            margin-top: 2px !important;
+                            margin-left: 10px !important;
+                        }
+                    }
+                    .btn-addr-2 {
+                        display: block;
+                        margin-bottom: 30px;
+                        .btn {
+                            width: 106px;
+                            height: 26px;
+                            font-size: 11px;
+                            line-height: 24px;
+                            color: #666;
+                            padding: 0;
+                            border-radius: 0;
+                            border: 1px solid #afafaf;
+                            background-color: #fff;
+                        }
+                    }
+                    @media(min-width: $sm) {
+                        display: inline-block;
+                        margin-left: 105px;
+                        label {
+                            display: inline-block;
+                            margin-bottom: 0;
+                            &:first-child {
+                                margin-right: 30px;
+                            }
+                        }
+                        .btn-addr-2 {
+                            display: inline-block;
+                            margin-left: 10px;
+                            margin-bottom: 0;
+                            .btn {
+                                width: 80px;
+                                height: 20px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                    @media(min-width: $md) {
+                        margin-left: 154px;
+                    }
+                    @media(min-width: $lg) {
+                        margin-left: 161px;
+                    }
+                }
+                .shipping-input {
+                    
+                }
+            }
+            .pay {
+                margin-top: 55px;
+                .pay-input {
+                    padding: 35px 0 20px;
+                    border-top: 1px solid #e9e9e9;
+                    border-bottom: 1px solid #e9e9e9;
+                    @media(min-width: $sm) {
+                        padding-bottom: 30px;
+                    }
+                    h5 {
+                        font-size: 11px;
+                        color: #2b2b2b;
+                        padding-left: 20px;
+                        margin-bottom: 40px;
+                        &.pay-title {
+                            margin-bottom: 25px;
+                            @media(min-width: $sm) {
+                                margin-bottom: 0;
+                            }
+                        }
+                        @media(min-width: $sm) {
+                            font-size: 12px;
+                        }
+                    }
+                    p {
+                        margin-bottom: 40px;
+                        padding-left: 50px;
+                        @media(min-width: $sm) {
+                            padding-left: 0;
+                        }
+                    }
+                    .total-pay {
+                        
+                    }
+                    .sale-pay {
+                        
+                    }
+                    .btn-coupon {
+                        .btn {
+                            width: 70px;
+                            height: 30px;
+                            font-size: 12px;
+                            text-align: center;
+                            color: #fff;
+                            line-height: 30px;
+                            padding: 0;
+                            border-radius: 0;
+                            border: 0;
+                            background-color: #2b2b2b;
+                        }
+                    }
+                    .pay-select {
+                        font-size: 0;
+                        padding-left: 20px;
+                        li {
+                            display: inline-block;
+                            width: 50%;
+                            margin-bottom: 15px;
+                            label {
+                                font-size: 11px;
+                                color: #666;
+                            }
+                        }
+                        @media(min-width: $sm) {
+                            padding-left: 0;
+                            li {
+                                margin-bottom: 0;
+                                input {
+                                    margin-top: 2px !important;
+                                }
+                                width: inherit;
+                                margin-right: 30px;
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                margin-top: 65px;
+                @media(min-width: $sm) {
+                    margin-top: 90px;
+                    p {
+                        .btn-lg {
+                            width: 170px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

@@ -22,7 +22,7 @@
                             <h2 class="visible-lg">MY PAGE</h2>
                             <ul>
                                 <li><a href="#">ORDERS</a></li>
-                                <li><a href="#">CART</a></li>
+                                <li class="active"><a href="#">CART</a></li>
                                 <li><a href="#">PROFILE</a></li>
                                 <li><a href="#">POINT</a></li>
                                 <li><a href="#">COUPON</a></li>
@@ -37,27 +37,73 @@
                         <div class="my-basket">
                             <h3>ITEMS</h3>
                             <ul class="basket-list">
-                                <li>
-                                    <p class="product-img">
-                                        <img src="/assets/images/mypage/product_item_img01.gif" class="img-responsive" alt="구매상품 이미지">
-                                    </p>
-                                    <ul class="product-info">
-                                        <li class="name-color">
-                                            <h4>PHF-5089D Col.4-1</h4>
-                                            <dl>
-                                                <dt>COLOR</dt>
-                                                <dd>WHITE</dd>
-                                            </dl>
-                                        </li>
-                                        <li class="quantity">1</li>
-                                        <li class="modify">
-                                            <a href="#">EDIT</a>
-                                            <a href="#">DELETE</a>
-                                        </li>
-                                        <li class="amount">204,000</li>
-                                    </ul>
+                                <li class="basket-item">
+                                    <div class="figure">
+                                        <p>
+                                            <img src="/assets/images/mypage/product_item_img01.gif" class="img-responsive" alt="구매상품 이미지">
+                                        </p>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details-content">
+                                            <div class="p-info">
+                                                <h4>PHF-5089D Col.4-1</h4>
+                                                <dl>
+                                                    <dt>COLOR</dt>
+                                                    <dd>WHITE</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="quantity">
+                                                <p>1EA</p>
+                                            </div>
+                                            <div class="edit">
+                                                <a href="#">EDIT</a>
+                                                <a href="#">DELETE</a>
+                                            </div>
+                                            <div class="price">204,000</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="basket-item">
+                                    <div class="figure">
+                                        <p>
+                                            <img src="/assets/images/mypage/product_item_img01.gif" class="img-responsive" alt="구매상품 이미지">
+                                        </p>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details-content">
+                                            <div class="p-info">
+                                                <h4>PHF-5089D Col.4-1</h4>
+                                                <dl>
+                                                    <dt>COLOR</dt>
+                                                    <dd>WHITE</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="quantity">
+                                                <p>1EA</p>
+                                            </div>
+                                            <div class="edit">
+                                                <a href="#">EDIT</a>
+                                                <a href="#">DELETE</a>
+                                            </div>
+                                            <div class="price">204,000</div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
+                            <a href="#" class="delete-all">DELETE ALL</a>
+                            <dl class="total">
+                                <dt>Sub Total</dt>
+                                <dd>7,603,000</dd>
+                                <dt>Shipping</dt>
+                                <dd>0</dd>
+                                <dt>Total</dt>
+                                <dd>7,603,000</dd>
+                            </dl>
+                        </div>
+                        <div class="btn-area">
+                            <p>
+                                <button type="button" class="btn btn-lg btn-gray">주문하기</button>
+                            </p>
                         </div>
                     </div>
                 </div>
