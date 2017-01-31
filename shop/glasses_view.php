@@ -21,8 +21,8 @@
                         <div class="lnb">
                             <h2 class="visible-lg">SHOP</h2>
                             <ul>
-                                <li class="active"><a href="#">SUNGLASSES</a></li>
-                                <li><a href="#">GLASSES</a></li>
+                                <li><a href="/shop/sunglasses_list.php">SUNGLASSES</a></li>
+                                <li class="active"><a href="/shop/glasses_list.php">GLASSES</a></li>
                             </ul>
                         </div>
                     </div>

@@ -23,15 +23,17 @@
                     <li>
                         <a href="#">SHOP</a>
                         <ul>
-                            <li><a href="#">DIARY</a></li>
-                            <li><a href="#">VIDEO</a></li>
+                            <li><a href="/shop/sunglasses_list.php">SUNGLASSES</a></li>
+                            <li><a href="/shop/glasses_list.php">GLASSES</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">CAMPAIGN</a>
                         <ul>
-                            <li><a href="#">DIARY</a></li>
-                            <li><a href="#">VIDEO</a></li>
+                            <li><a href="/campaign/diary_list.php">DIARY</a></li>
+                            <li><a href="/campaign/celeb_list.php">CELEB</a></li>
+                            <li><a href="/campaign/video_list.php">VIDEO</a></li>
+                            <li><a href="/campaign/look_book.php">LOOKBOOK</a></li>
                         </ul>
                     </li>
                     <li>

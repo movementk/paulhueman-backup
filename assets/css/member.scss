@@ -3,134 +3,124 @@
 /* login */
 .login {
     .login-form {
-        .tab-content {
-            padding: 54px 20px;
-            .form-group {
-                padding-bottom: 15px;
-                &:first-child {
-                    text-align: right;
+        .form-group {
+            width: 260px;
+            margin: 0 auto;
+            .form-control {
+                margin-bottom: 10px;
+            }
+            @media(min-width: $sm) {
+                width: 470px;
+                .form-control {
+                    
+                }
+            }
+        }
+        .btn-area {
+            p {
+                .btn-sm {
+                    width: 125px;
+                    @media(min-width: $sm) {
+                        width: 230px;
+                        margin-right: 10px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .dot-list {
+            width: 260px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 23px;
+            li {
+                margin-bottom: 10px;
+                &:before {
+                    top: -2px;
+                    @media(min-width: $sm) {
+                        top: -1px;
+                    }
                 }
                 &:last-child {
-                    padding-bottom: 0;
+                    margin-bottom: 0;
                 }
-                @media(min-width: $sm) {
-                    padding-bottom: 10px;
-                    &:first-child {
-                        padding-bottom: 15px;
-                    }
-                }
-                @media(min-width: $sm) {
-                    width: 470px;
-                    margin: 0 auto;
-                }
-            }
-            .btn-area {
-                @media(min-width: $sm) {
-                    width: 470px;
-                    margin: 0 auto;
-                }
-            }
-            .id-find-join {
-                padding-top: 30px;
-                .dot-list {
-                    li {
-                        margin-bottom: 25px;
-                        &:before {
-                            top: -3px;
-                        }
-                        dl {
-                            dt {
-                                font-size: 11px;
-                                color: #666;
-                                font-weight: 400;
-                                margin-bottom: 8px;
-                            }
-                            dd {
-                                a {
-                                    font-size: 11px;
-                                    color: #666;
-                                    font-weight: 400;
-                                    padding-bottom: 2px;
-                                    &:hover, &:focus {
-                                        border-bottom: 1px solid #bcbcbc;
-                                    }
-                                }
-                            }
-                        }
-                        &:last-child {
-                            margin-bottom: 0;
+                dl {
+                    overflow: hidden;
+                    dt {
+                        float: left;
+                        font-size: 11px;
+                        color: #666;
+                        font-weight: 300;
+                        @media(min-width: $sm) {
+                            font-size: 12px;
+                            line-height: 20px;
                         }
                     }
-                }
-                @media(min-width: $sm) {
-                    width: 470px;
-                    margin: 0 auto;
-                    padding-top: 40px;
-                    .dot-list {
-                        li {
-                            margin-bottom: 0;
-                            &:before {
-                                top: -2px;
-                            }
-                            dl {
-                                overflow: hidden;
-                                dt {
-                                    float: left;
-                                    font-size: 12px;
-                                    margin-bottom: 10px;
-                                }
-                                dd {
-                                    float: right;
-                                    a {
-                                        font-size: 12px;
-                                    }
-                                }
+                    dd {
+                        float: right;
+                        a {
+                            font-size: 11px;
+                            color: #666;
+                            font-weight: 300;
+                            @media(min-width: $sm) {
+                                font-size: 12px;
+                                line-height: 20px;
                             }
                         }
                     }
                 }
             }
             @media(min-width: $sm) {
-                padding-top: 115px;
-                padding-bottom: 150px;
+                width: 470px;
+                margin-top: 40px;
+                li {
+                    margin-bottom: 0;
+                }
             }
         }
     }
 }
-
-/* nonmember */
-.nonmember {
-    .login-form {
-        .tab-content {
-            padding-top: 70px;
-            @media(min-width: $sm) {
-                padding-top: 130px;
+.non-member-form {
+    margin-top: 80px;
+    @media(min-width: $sm) {
+        margin-top: 120px;
+    }
+    @media(min-width: $md) {
+        margin-top: 160px;
+    }
+    h3 {
+        font-size: 12px;
+        color: #2b2b2b;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 30px;
+        @media(min-width: $sm) {
+            font-size: 13px;
+            margin-bottom: 40px;
+        }
+    }
+    .form-group {
+        width: 260px;
+        margin: 0 auto;
+        .form-control {
+            margin-bottom: 10px;
+        }
+        @media(min-width: $sm) {
+            width: 470px;
+        }
+    }
+    .btn-area {
+        width: 260px;
+        margin: 0 auto;
+        p {
+            .btn-lg {
+                width: 100%;
             }
-            @media(min-width: $md) {
-                padding-top: 110px;
-            }
-            .id-find-join {
-                .attention {
-                    position: relative;
-                    font-size: 11px;
-                    color: #666;
-                    line-height: 18px;
-                    padding-left: 15px;
-                    &:before {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        font-size: 15px;
-                        color: #666;
-                        font-family: "fontello";
-                        content: '\E806'; 
-                    }
-                    a {
-                        font-size: 11px;
-                        color: #666;
-                    }
-                }
-            }
+        }
+        @media(min-width: $sm) {
+            width: 470px;
         }
     }
 }
@@ -138,114 +128,123 @@
 /* id-find, pw-find 공통 find */
 .find {
     .find-form {
-        .tab-content {
-            padding: 55px 20px;
-            .attention {
-                font-size: 11px;
-                color: #666;
-                font-weight: 300;
-                line-height: 20px;
+        width: 260px;
+        margin: 0 auto;
+        .form-group {
+            &:nth-of-type(1) {
                 text-align: center;
+                padding-bottom: 40px;
             }
-            .form-group {
-                padding-bottom: 15px;
-                &:nth-of-type(1) {
-                    text-align: center;
-                    padding: 40px 0;
-                }
-                .radio-area {
-                    margin-right: 5px;
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                }
+            .form-control {
+                width: 100%;
+                margin-bottom: 10px;
             }
-            @media(min-width: $sm) {
-                padding: 90px 0 110px;
-                .attention {
-                    font-size: 12px;
-                }
-                .form-group {
-                    width: 470px;
-                    margin: 0 auto;
-                    padding-bottom: 10px;
-                    &:nth-of-type(1) {
-                        padding: 33px 0;
-                    }
-                    .radio-area {
-                        margin-right: 48px;
-                    }
-                }
-                .btn-area {
-                    width: 470px;
-                    margin: 0 auto;
-                }
-            }
-            @media(min-width: $md) {
-                padding: 110px 0 150px;
-                .form-group {
-                    width: 370px;
-                    &:nth-of-type(1) {
-                        text-align: left;
-                        padding-bottom: 20px;
-                    }
-                    .radio-area {
-                        text-align: left;
-                        margin-right: 45px;
-                    }
-                }
-                .btn-area {
-                    width: 370px;
-                }
-            }
-        }
-    }
-}
-
-/* join-terms */
-.join-terms {
-    .terms {
-        h3 {
-            &:nth-of-type(2) {
-                margin-top: 70px;
-            }
-        }
-    }
-    .btn-area {
-        margin-top: 60px;
-    }
-    @media(min-width: $sm) {
-        .terms {
-            h3 {
-                &:nth-of-type(2) {
-                    margin-top: 85px;
+            .radio-area {
+                margin-right: 5px;
+                &:last-child {
+                    margin-right: 0;
                 }
             }
         }
         .btn-area {
-            margin-top: 70px;
+            p {
+                .btn-sucess {
+                    width: 100%;
+                }
+            }
         }
-    }
-    @media(min-width: $md) {
-        .terms {
-            h3 {
-                &:nth-of-type(2) {
-                    margin-top: 100px;
+        @media(min-width: $sm) {
+            width: 370px;
+            .form-group {
+                &:nth-of-type(1) {
+                    padding-bottom: 20px;
+                }
+                .radio-area {
+                    margin-right: 45px;
                 }
             }
         }
     }
 }
 
-/* join-input */
-.join-input {
-    .join-input-form {
+/* pw-find */
+.pw-find {
+    .find-form {
+        .form-group {
+            &:nth-of-type(1) {
+                padding-bottom: 30px;
+                text-align: left;
+                @media(min-width: $sm) {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }    
+}
+
+/* pw-sucess */
+.pw-sucess {
+    .page-header {
+        margin-bottom: 90px;
+    }
+    .sucess-txt {
+        font-size: 11px;
+        color: #666;
+        text-align: center;
+        line-height: 20px;
+        @media(min-width: $sm) {
+            font-size: 12px;
+        }
+    }
+    .btn-area {
+        width: 260px;
+        margin: 0 auto;
+        margin-top: 30px;
+        p {
+            .btn-lg {
+                width: 100%;
+            }
+        }
+        @media(min-width: $sm) {
+            width: 370px;
+        }
+        @media(min-width: $md) {
+            margin-top: 40px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* join */
+.join {
+    .page-header {
+        margin-bottom: 70px;
+    }
+    .join-form {
         h3 {
             overflow: hidden;
             font-size: 12px;
             color: #222;
             font-weight: 400;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             small {
                 font-style: normal;
                 font-size: 11px;
@@ -268,18 +267,19 @@
                 }
             }
         }
-        .input-form {
-            padding-top: 30px;
-            border-top: 1px solid #3d3d3d;
-            border-bottom: 1px solid #3d3d3d;
+        .input-write {
+            padding-top: 15px;
+            padding-bottom: 5px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
             label {
                 height: 30px;
                 font-size: 11px;
-                color: #666;
+                color: #2b2b2b;
                 font-weight: 300;
                 line-height: 30px;
                 padding-left: 15px;
-                margin-bottom: 30px;
+                margin-bottom: 10px;
                 &.ootc {
                     position: relative;
                     &:before {
@@ -301,18 +301,18 @@
             .defines {
                 height: 30px;
                 font-size: 11px;
-                color: #666;
+                color: #2b2b2b;
                 font-weight: 300;
                 line-height: 30px;
                 padding-left: 15px;
-                margin-bottom: 30px;
+                margin-bottom: 10px;
                 @media(min-width: $sm) {
                     font-size: 13px;
                 }
             }
             .form-control {
                 height: 30px;
-                margin-bottom: 30px;
+                margin-bottom: 10px;
                 &.u-name {
                     width: 150px;
                 }
@@ -339,7 +339,7 @@
                 .form-control {
                     clear: both;
                     display: block;
-                    margin-bottom: 10px;
+                    margin-bottom: 5px;
                     &.addr-1 {
                         float: left;
                         width: 116px;
@@ -362,11 +362,26 @@
             .form-group {
                 .check {
                     padding-left: 0;
-                    margin-left: 57px;
-                    @media(min-width: $sm) {
-                        margin-left: 0;
-                    }
                 }
+            }
+        }
+        .terms {
+            padding-top: 60px;
+            h4 {
+                font-size: 13px;
+                color: #222;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            .terms-info {
+                overflow-y: scroll;
+                height: 380px;
+                font-size: 11px;
+                color: #666;
+                line-height: 20px;
+                padding: 30px 20px;
+                border: 1px solid #dfdfdf;
+                background-color: #f4f4f4;
             }
         }
         .btn-area {
