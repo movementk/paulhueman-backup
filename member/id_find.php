@@ -15,40 +15,33 @@
                 </ol>
             </div>
             <div class="page-header">
-                <h2>ID / PASSWORD SEARCH</h2>
-                <p>아이디가 기억나지 않으세요? 원하시는 방법을 선택해 아이디를 확인하실 수 있습니다</p>
+                <h2>FIND YOUR ID</h2>
+                <p>
+                    가입하신 방법에 따라 아이디 찾기가 가능합니다.<br>
+                    법인사업자 회원 또는 외국인 회원의 경우 법인명과 법인번호 또는 이름과 등록번호를 입력해 주세요
+                </p>
             </div>
             <div class="find-form">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="/member/id_find.php">아이디 찾기</a></li>
-                    <li><a href="/member/pw_find.php">비밀번호 찾기</a></li>
-                </ul>
-                <div class="tab-content">
-                    <form action="#">
-                        <p class="attention">
-                            회원님이 기존에 가입 시 입력한 회원정보를 통해 기존 폴휴먼에서 <br class="hidden-xs">
-                            가입하신 ID를 찾으시거나, 본인인증 (휴대폰인증 / 아이핀인증)을 통해 ID를 조회하실 수 있습니다.
+                <form action="#">
+                    <div class="form-group">
+                        <label class="radio-area"><input type="radio">휴대폰번호</label>
+                        <label class="radio-area"><input type="radio">이메일</label>
+                        <label class="radio-area"><input type="radio">아이핀(i-PIN) 본인인증</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="u-id" class="sr-only">아이디</label>
+                        <input type="text" class="form-control" id="u-id" placeholder="아이디">
+                    </div>
+                    <div class="form-group">
+                        <label for="u-pw" class="sr-only">비밀번호</label>
+                        <input type="password" class="form-control" id="u-pw" placeholder="비밀번호">
+                    </div>
+                    <div class="btn-area">
+                        <p>
+                            <button type="submit" class="btn btn-success">확인</button>
                         </p>
-                        <div class="form-group">
-                            <label class="radio-area"><input type="radio">휴대폰번호</label>
-                            <label class="radio-area"><input type="radio">이메일</label>
-                            <label class="radio-area"><input type="radio">아이핀(i-PIN) 본인인증</label>
-                        </div>
-                        <div class="form-group">
-                            <label for="u-id" class="sr-only">아이디</label>
-                            <input type="text" class="form-control" id="u-id" placeholder="아이디">
-                        </div>
-                        <div class="form-group">
-                            <label for="u-pw" class="sr-only">비밀번호</label>
-                            <input type="password" class="form-control" id="u-pw" placeholder="비밀번호">
-                        </div>
-                        <div class="btn-area">
-                            <p>
-                                <button type="submit" class="btn btn-success">확인</button>
-                            </p>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div><!--// Container -->
     </main><!--// Main Content -->

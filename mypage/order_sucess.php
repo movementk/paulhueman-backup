@@ -21,12 +21,12 @@
                         <div class="lnb">
                             <h2 class="visible-lg">MY PAGE</h2>
                             <ul>
-                                <li><a href="#">ORDERS</a></li>
-                                <li class="active"><a href="#">CART</a></li>
+                                <li class="active"><a href="/mypage/order_list.php">ORDERS</a></li>
+                                <li><a href="/mypage/basket.php">CART</a></li>
                                 <li><a href="#">PROFILE</a></li>
-                                <li><a href="#">POINT</a></li>
-                                <li><a href="#">COUPON</a></li>
-                                <li><a href="#">Q&amp;A</a></li>
+                                <li><a href="/mypage/point.php">POINT</a></li>
+                                <li><a href="/mypage/point.php">COUPON</a></li>
+                                <li><a href="/mypage/qna_list.php">Q&amp;A</a></li>
                             </ul>
                         </div>
                     </div>

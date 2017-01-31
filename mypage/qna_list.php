@@ -21,12 +21,12 @@
                         <div class="lnb">
                             <h2 class="visible-lg">MY PAGE</h2>
                             <ul>
-                                <li><a href="#">ORDERS</a></li>
-                                <li><a href="#">CART</a></li>
+                                <li><a href="/mypage/order_list.php">ORDERS</a></li>
+                                <li><a href="/mypage/basket.php">CART</a></li>
                                 <li><a href="#">PROFILE</a></li>
-                                <li><a href="#">POINT</a></li>
-                                <li><a href="#">COUPON</a></li>
-                                <li class="active"><a href="#">Q&amp;A</a></li>
+                                <li><a href="/mypage/point.php">POINT</a></li>
+                                <li><a href="/mypage/point.php">COUPON</a></li>
+                                <li class="active"><a href="/mypage/qna_list.php">Q&amp;A</a></li>
                             </ul>
                         </div>
                     </div>
@@ -122,20 +122,6 @@
                                 </li>
                             </ul>
                         </nav>
-                        <div class="search-form">
-                            <form action="#">
-                                <div class="form-group select-form">
-                                    <select class="form-control">
-                                        <option>전체</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="search">검색하기</label>
-                                    <input class="form-control" id="search" type="text">
-                                </div>
-                                <button class="btn btn-search" type="submit"><span class="sr-only">검색</span></button>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>

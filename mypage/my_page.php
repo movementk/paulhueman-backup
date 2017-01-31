@@ -20,9 +20,7 @@
             <article class="mypage-info">
                 <div class="article-header">
                     <dl>
-                        <dt>
-                            홍길동 님
-                        </dt>
+                        <dt>홍길동 님</dt>
                         <dd>
                             적립포인트 
                             <ul>
@@ -35,16 +33,16 @@
                 <div class="article-content">
                     <ul class="my-list">
                         <li>
-                            <a href="#">ORDER LIST</a>
+                            <a href="/mypage/order_list.php">ORDER LIST</a>
                         </li>
                         <li>
-                            <a href="#">EDIT AN ACCOUNT</a>
+                            <a href="/mypage/modify.php">EDIT AN ACCOUNT</a>
                         </li>
                         <li>
-                            <a href="#">POINT</a>
+                            <a href="/mypage/point.php">POINT</a>
                         </li>
                         <li>
-                            <a href="#">1:1 INQUIRY</a>
+                            <a href="/mypage/qna_list.php">1:1 INQUIRY</a>
                         </li>
                     </ul>
                 </div>

@@ -44,7 +44,7 @@ input[type=checkbox] {
 input[type=radio] {
   vertical-align: top;
   margin: 0 !important;
-  margin-top: 3px !important;
+  margin-top: 2px !important;
   margin-right: 5px !important; }
 
 textarea {
@@ -146,7 +146,7 @@ textarea {
   padding-bottom: 0;
   border: 0; }
   .page-header > h2 {
-    font-size: 20px;
+    font-size: 23px;
     color: #000;
     letter-spacing: -1px;
     font-family: 'Lato', sans-serif; }
@@ -165,8 +165,6 @@ textarea {
   @media (min-width: 768px) {
     .page-header {
       margin-bottom: 60px; }
-      .page-header > h2 {
-        font-size: 23px; }
       .page-header > p {
         font-size: 13px; } }
   @media (min-width: 992px) {

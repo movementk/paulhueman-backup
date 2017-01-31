@@ -5,7 +5,7 @@
 <body class="sub member">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/aside.php'); ?>
-    <main id="content" class="join-input">
+    <main id="content" class="join">
         <div class="container">
             <!-- page-path -->
             <div class="page-path">
@@ -18,27 +18,13 @@
                 <h2>JOIN</h2>
                 <p>회원가입하시면 폴휴먼의 다양한 혜택을 누리실 수 있습니다.</p>
             </div>
-            <ol class="step-list">
-                <li>
-                    <p><img src="/assets/images/sub/step01_ico.png" alt="회원약관동의"></p>
-                    <h3><i>STEP 01</i>회원약관동의</h3>
-                </li>
-                <li class="active">
-                    <p><img src="/assets/images/sub/step02_ico_active.png" alt="회원약관동의"></p>
-                    <h3><i>STEP 02</i>회원정보입력</h3>
-                </li>
-                <li>
-                    <p><img src="/assets/images/sub/step03_ico.png" alt="회원약관동의"></p>
-                    <h3><i>STEP 03</i>가입완료</h3>
-                </li>
-            </ol>
-            <div class="join-input-form">
+            <div class="join-form">
                 <h3>
                     회원정보 입력
                     <small>필수 입력사항입니다</small>
                 </h3>
-                <form action="#">
-                    <div class="input-form">
+                <form action="#"> 
+                    <div class="input-write">
                         <div class="row">
                             <div class="col-xs-4 col-sm-3 col-lg-2">
                                 <label for="u-id" class="ootc">아이디</label>
@@ -98,7 +84,6 @@
                                     <input type="text" id="addr-3" class="form-control">
                                 </div>
                             </div>
-                            
                             <div class="col-xs-4 col-sm-3 col-lg-2">
                                 <p class="defines">이메일 수신동의</p>
                             </div>
@@ -107,7 +92,6 @@
                                     <label class="check"><input type="checkbox">이메일 수신을 동의합니다</label>
                                 </div>
                             </div>
-                            
                             <div class="col-xs-4 col-sm-3 col-lg-2">
                                 <p class="defines">SMS 수신동의</p>
                             </div>
@@ -116,6 +100,22 @@
                                     <label class="check"><input type="checkbox">SMS수신을 동의합니다</label>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="terms service-terms">
+                        <h4>이용약관</h4>
+                        <div class="terms-info">
+                            이 약관은  제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)
+                            를 이용함에 있어 사이버 몰과 이용자의 권리?의무 및 책임사항
+                            을 규정함을 목적으로 합니다.
+                        </div>
+                    </div>
+                    <div class="terms privacy-terms">
+                        <h4>개인정보취급방침</h4>
+                        <div class="terms-info">
+                            이 약관은  제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)
+                            를 이용함에 있어 사이버 몰과 이용자의 권리?의무 및 책임사항
+                            을 규정함을 목적으로 합니다.
                         </div>
                     </div>
                     <div class="btn-area">

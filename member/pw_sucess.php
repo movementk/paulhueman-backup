@@ -1,30 +1,30 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/dochead.php'); ?>
 <link href="/assets/css/sub.css" rel="stylesheet">
-<link href="/assets/css/mypage.css" rel="stylesheet">
+<link href="/assets/css/member.css" rel="stylesheet">
 </head>
-<body class="sub mypage">
+<body class="sub member">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/aside.php'); ?>
-    <main id="content" class="secede-sucess">
+    <main id="content" class="find pw-sucess">
         <div class="container">
             <!-- page-path -->
             <div class="page-path">
                 <ol class="breadcrumb">
                     <li><a href="/"><i class="icon-home"></i></a></li>
-                    <li class="active">MEMBERSHIP</li>
+                    <li class="active">LOGIN</li>
                 </ol>
             </div>
-            <div class="sucess">
-                <h2>회원탈퇴가 완료되었습니다.</h2>
+            <div class="page-header">
+                <h2>FIND PASSWORD</h2>
+                <p>가입하신 방법에 따라 비밀번호 찾기가 가능합니다.</p>
+            </div>
+            <p class="sucess-txt">
+                홍길동 회원님의 패스워드를<br> paulhueman@naver.com 으로 보냈습니다 즐거운 쇼핑하세요!
+            </p>
+            <div class="btn-area">
                 <p>
-                    그동안 폴휴먼을 이용해주셔서 감사합니다<br> 
-                    보다 나은 서비스로 다시 찾아 뵙겠습니다.
+                    <a href="/member/login.php" class="btn btn-lg btn-gray" role="button">로그인 하기</a>
                 </p>
-                <div class="btn-area">
-                    <p>
-                        <a href="/" class="btn btn-default btn-gray" role="button">메인가기</a>
-                    </p>
-                </div>
             </div>
         </div><!--// Container -->
     </main><!--// Main Content -->
