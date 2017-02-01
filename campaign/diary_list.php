@@ -38,7 +38,7 @@
                                                 <img src="/assets/images/campaign/diary_img01.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
+                                                   
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -51,7 +51,6 @@
                                                 <img src="/assets/images/campaign/diary_img02.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -64,7 +63,6 @@
                                                 <img src="/assets/images/campaign/diary_img03.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -77,7 +75,6 @@
                                                 <img src="/assets/images/campaign/diary_img04.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -90,7 +87,6 @@
                                                 <img src="/assets/images/campaign/diary_img05.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -103,7 +99,6 @@
                                                 <img src="/assets/images/campaign/diary_img06.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -116,7 +111,6 @@
                                                 <img src="/assets/images/campaign/diary_img07.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -129,7 +123,6 @@
                                                 <img src="/assets/images/campaign/diary_img08.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -142,7 +135,6 @@
                                                 <img src="/assets/images/campaign/diary_img09.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>

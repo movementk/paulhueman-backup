@@ -39,7 +39,6 @@
                                                 <figcaption>
                                                     민효린 스타일 폴휴먼 하금테<br>
                                                     선글라스_PHS-1070A
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -53,7 +52,6 @@
                                                 <figcaption>
                                                     살림하는 남자들 김승우 폴휴먼<br>
                                                     안경테 고급앤틱 눈길 끌어!
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -66,7 +64,6 @@
                                                 <img src="/assets/images/campaign/star_img03.jpg" class="img-responsive" alt="">
                                                 <figcaption>
                                                     폴휴먼 여자선글라스★성유리 PHS-1075A
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -80,7 +77,6 @@
                                                 <figcaption>
                                                     굿바이 미스터 블랙 송재림 하금테<br>
                                                     안경 폴휴먼 PHF-5060D
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -94,7 +90,6 @@
                                                 <figcaption>
                                                     Paul Hueman 폴휴먼 캣아이 성유리<br>
                                                     선글라스 PHS-1067A
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -108,7 +103,6 @@
                                                 <figcaption>
                                                     Paul Hueman 폴휴먼 서강준<br>
                                                     솔텍스 안경 PHF-160A
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -122,7 +116,6 @@
                                                 <figcaption>
                                                     폴휴먼 paul hueman 민효린 선글라스,<br>
                                                     보잉 선글라스 PHS-1071A
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -136,7 +129,6 @@
                                                 <figcaption>
                                                     폴휴먼(Paul Hueman), 폴휴먼 하금테- 폴휴먼<br>
                                                     하금테안경,남자하금테,폴휴먼안경
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -150,7 +142,6 @@
                                                 <figcaption>
                                                     폴휴먼안경,폴휴먼,오버사이즈안경,뿔테,<br>
                                                     사각안경,paulhuman,폴휴먼안경테
-                                                    <p class="date">2016.01.01</p>
                                                 </figcaption>
                                             </figure>
                                         </a>

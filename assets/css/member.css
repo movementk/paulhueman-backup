@@ -176,8 +176,8 @@ address {
 .join .join-form h3 {
   overflow: hidden;
   font-size: 12px;
-  color: #222;
-  font-weight: 400;
+  color: #2b2b2b;
+  font-weight: 500;
   margin-bottom: 10px; }
   .join .join-form h3 small {
     font-style: normal;
@@ -191,7 +191,7 @@ address {
       margin-right: 3px; }
   @media (min-width: 768px) {
     .join .join-form h3 {
-      font-size: 14px; }
+      font-size: 13px; }
       .join .join-form h3 small {
         font-size: 12px; }
         .join .join-form h3 small:before {
@@ -201,6 +201,9 @@ address {
   padding-bottom: 5px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd; }
+  @media (min-width: 768px) {
+    .join .join-form .input-write {
+      padding-top: 25px; } }
   .join .join-form .input-write label {
     height: 30px;
     font-size: 11px;
@@ -223,7 +226,8 @@ address {
             font-size: 13px; } }
     @media (min-width: 768px) {
       .join .join-form .input-write label {
-        font-size: 13px; } }
+        font-size: 12px;
+        margin-bottom: 20px; } }
   .join .join-form .input-write .defines {
     height: 30px;
     font-size: 11px;
@@ -234,26 +238,15 @@ address {
     margin-bottom: 10px; }
     @media (min-width: 768px) {
       .join .join-form .input-write .defines {
-        font-size: 13px; } }
+        font-size: 12px; } }
   .join .join-form .input-write .form-control {
     height: 30px;
     margin-bottom: 10px; }
-    .join .join-form .input-write .form-control.u-name {
-      width: 150px; }
     @media (min-width: 768px) {
       .join .join-form .input-write .form-control {
         width: 250px;
-        display: inline-block; } }
-  .join .join-form .input-write .attention {
-    display: none; }
-    .join .join-form .input-write .attention:before {
-      content: "※";
-      margin: 0 5px 0 10px; }
-    @media (min-width: 768px) {
-      .join .join-form .input-write .attention {
         display: inline-block;
-        font-size: 12px;
-        color: #666; } }
+        margin-bottom: 20px; } }
   .join .join-form .input-write .addr {
     overflow: hidden;
     margin-bottom: 30px; }
@@ -275,13 +268,25 @@ address {
           width: 169px; } }
   .join .join-form .input-write .form-group .check {
     padding-left: 0; }
+    @media (min-width: 768px) {
+      .join .join-form .input-write .form-group .check {
+        font-size: 13px; } }
 .join .join-form .terms {
   padding-top: 60px; }
+  @media (min-width: 768px) {
+    .join .join-form .terms {
+      padding-top: 115px; } }
+  @media (min-width: 992px) {
+    .join .join-form .terms {
+      padding-top: 100px; } }
   .join .join-form .terms h4 {
     font-size: 13px;
     color: #222;
     font-weight: 400;
     margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .join .join-form .terms h4 {
+        font-size: 14px; } }
   .join .join-form .terms .terms-info {
     overflow-y: scroll;
     height: 380px;
@@ -291,87 +296,102 @@ address {
     padding: 30px 20px;
     border: 1px solid #dfdfdf;
     background-color: #f4f4f4; }
-.join .join-form .btn-area {
-  margin-top: 50px; }
-  @media (min-width: 768px) {
-    .join .join-form .btn-area {
-      margin-top: 80px; } }
-  @media (min-width: 992px) {
-    .join .join-form .btn-area {
-      margin-top: 60px; } }
-
-/* join-sucess */
-.join-sucess .step-list {
-  margin-bottom: 67px; }
-  @media (min-width: 768px) {
-    .join-sucess .step-list {
-      margin-bottom: 90px; } }
-  @media (min-width: 768px) {
-    .join-sucess .step-list {
-      margin-bottom: 105px; } }
-.join-sucess .sucess {
-  padding-top: 90px;
-  background-image: url(/assets/images/member/join_sucess_bg.gif);
-  background-repeat: no-repeat;
-  background-position: 50% 0; }
-  .join-sucess .sucess h3 {
-    font-size: 20px;
-    color: #2b2b2b;
-    line-height: 28px;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 20px; }
-  .join-sucess .sucess > p {
+    @media (min-width: 768px) {
+      .join .join-form .terms .terms-info {
+        height: 350px;
+        font-size: 13px; } }
+  .join .join-form .terms .form-group .check {
     font-size: 11px;
     color: #666;
-    text-align: center;
-    line-height: 20px; }
-  .join-sucess .sucess .btn-area {
-    margin-top: 60px; }
-    .join-sucess .sucess .btn-area p .btn-lg {
-      height: 40px;
-      line-height: 38px; }
+    margin-top: 15px; }
+    @media (min-width: 768px) {
+      .join .join-form .terms .form-group .check {
+        font-size: 13px; } }
+.join .join-form .btn-area {
+  margin-top: 75px; }
   @media (min-width: 768px) {
-    .join-sucess .sucess {
-      padding-top: 100px; }
-      .join-sucess .sucess h3 {
-        font-size: 23px;
-        line-height: 30px;
-        margin-bottom: 35px; }
-      .join-sucess .sucess > p {
-        font-size: 13px;
-        line-height: 22px; } }
-  @media (min-width: 992px) {
-    .join-sucess .sucess h3 {
-      font-size: 24px;
-      line-height: 32px;
-      margin-bottom: 30px; }
-    .join-sucess .sucess .btn-area {
-      margin-top: 35px; }
-      .join-sucess .sucess .btn-area .btn-lg {
+    .join .join-form .btn-area {
+      margin-top: 80px; }
+      .join .join-form .btn-area p .btn-lg {
         width: 172px; } }
+  @media (min-width: 992px) {
+    .join .join-form .btn-area {
+      margin-top: 140px; } }
+
+/* join-sucess */
+@media (min-width: 992px) {
+  .join-sucess {
+    margin-bottom: 65px; } }
+.join-sucess .page-path .breadcrumb {
+  margin-bottom: 80px; }
+  @media (min-width: 768px) {
+    .join-sucess .page-path .breadcrumb {
+      margin-bottom: 70px; } }
+  @media (min-width: 992px) {
+    .join-sucess .page-path .breadcrumb {
+      margin-bottom: 130px; } }
+.join-sucess .sucess {
+  text-align: center; }
+  .join-sucess .sucess h2 {
+    font-size: 16px;
+    color: #2b2b2b;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    text-align: center; }
+  .join-sucess .sucess dl {
+    overflow: hidden;
+    display: inline-block;
+    text-align: left; }
+    .join-sucess .sucess dl dt {
+      float: left;
+      clear: both;
+      width: 80px;
+      font-size: 13px;
+      color: #666;
+      line-height: 24px;
+      font-weight: 300; }
+    .join-sucess .sucess dl dd {
+      float: left;
+      font-size: 13px;
+      color: #666;
+      line-height: 24px;
+      font-weight: 300; }
+  .join-sucess .sucess .btn-area {
+    margin-top: 40px; }
+    .join-sucess .sucess .btn-area p .btn-lg {
+      width: 260px; }
+    @media (min-width: 768px) {
+      .join-sucess .sucess .btn-area {
+        margin-top: 45px; }
+        .join-sucess .sucess .btn-area p .btn-lg {
+          width: 370px; } }
+    @media (min-width: 992px) {
+      .join-sucess .sucess .btn-area {
+        margin-top: 55px; }
+        .join-sucess .sucess .btn-area p .btn-lg {
+          width: 170px; } }
 
 /* service privacy 공통 */
-.common-terms .terms h3 {
+.common-terms .terms h2 {
+  font-size: 12px;
+  color: #222;
+  font-weight: 400;
   margin-bottom: 20px; }
-.common-terms .terms .summary {
-  padding: 30px 10px; }
-@media (min-width: 768px) {
-  .common-terms .terms h3 {
-    font-size: 14px; }
-  .common-terms .terms .summary {
-    padding: 25px 20px; } }
-@media (min-width: 992px) {
-  .common-terms .terms .summary {
-    padding: 30px 20px; } }
-
-.email-refusal .terms .summary {
-  height: 300px; }
   @media (min-width: 768px) {
-    .email-refusal .terms .summary {
-      height: 190px; } }
-  @media (min-width: 992px) {
-    .email-refusal .terms .summary {
-      height: 160px; } }
+    .common-terms .terms h2 {
+      font-size: 14px; } }
+.common-terms .terms .summary {
+  overflow-y: scroll;
+  height: 350px;
+  font-size: 11px;
+  color: #666;
+  line-height: 20px;
+  padding: 30px 10px;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4; }
+  @media (min-width: 768px) {
+    .common-terms .terms .summary {
+      font-size: 13px; } }
 
 /*# sourceMappingURL=member.css.map */

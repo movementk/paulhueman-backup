@@ -214,25 +214,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* join */
 .join {
     .page-header {
@@ -242,8 +223,8 @@
         h3 {
             overflow: hidden;
             font-size: 12px;
-            color: #222;
-            font-weight: 400;
+            color: #2b2b2b;
+            font-weight: 500;
             margin-bottom: 10px;
             small {
                 font-style: normal;
@@ -258,7 +239,7 @@
                 }
             }
             @media(min-width: $sm) {
-                font-size: 14px;
+                font-size: 13px;
                 small {
                     font-size: 12px;
                     &:before {
@@ -272,6 +253,10 @@
             padding-bottom: 5px;
             border-top: 1px solid #ddd;
             border-bottom: 1px solid #ddd;
+            @media(min-width: $sm) {
+                padding-top: 25px;
+                
+            }
             label {
                 height: 30px;
                 font-size: 11px;
@@ -295,7 +280,8 @@
                     }
                 }
                 @media(min-width: $sm) {
-                    font-size: 13px;
+                    font-size: 12px;
+                    margin-bottom: 20px;
                 }
             }
             .defines {
@@ -307,30 +293,16 @@
                 padding-left: 15px;
                 margin-bottom: 10px;
                 @media(min-width: $sm) {
-                    font-size: 13px;
+                    font-size: 12px;
                 }
             }
             .form-control {
                 height: 30px;
                 margin-bottom: 10px;
-                &.u-name {
-                    width: 150px;
-                }
                 @media(min-width: $sm) {
                     width: 250px;
                     display: inline-block;
-                }
-            }
-            .attention {
-                display: none;
-                &:before {
-                    content: "※";
-                    margin: 0 5px 0 10px;
-                }
-                @media(min-width: $sm) {
-                    display: inline-block;
-                    font-size: 12px;
-                    color: #666;
+                    margin-bottom: 20px;
                 }
             }
             .addr {
@@ -362,16 +334,28 @@
             .form-group {
                 .check {
                     padding-left: 0;
+                    @media(min-width: $sm) {
+                        font-size: 13px;
+                    }
                 }
             }
         }
         .terms {
             padding-top: 60px;
+            @media(min-width: $sm) {
+                padding-top: 115px;
+            }
+            @media(min-width: $md) {
+                padding-top: 100px;
+            }
             h4 {
                 font-size: 13px;
                 color: #222;
                 font-weight: 400;
                 margin-bottom: 20px;
+                @media(min-width: $sm) {
+                    font-size: 14px;
+                }
             }
             .terms-info {
                 overflow-y: scroll;
@@ -382,15 +366,34 @@
                 padding: 30px 20px;
                 border: 1px solid #dfdfdf;
                 background-color: #f4f4f4;
+                @media(min-width: $sm) {
+                    height: 350px;
+                    font-size: 13px;
+                }
+            }
+            .form-group {
+                .check {
+                    font-size: 11px;
+                    color: #666;
+                    margin-top: 15px;
+                    @media(min-width: $sm) {
+                        font-size: 13px;
+                    }
+                }
             }
         }
         .btn-area {
-            margin-top: 50px;
+            margin-top: 75px;
             @media(min-width: $sm) {
                 margin-top: 80px;
+                p {
+                    .btn-lg {
+                        width: 172px;
+                    }
+                }
             }
             @media(min-width: $md) {
-                margin-top: 60px;
+                margin-top: 140px;
             }
         }
     }
@@ -398,68 +401,72 @@
 
 /* join-sucess */
 .join-sucess {
-    .step-list {
-        margin-bottom: 67px;
-        @media(min-width: $sm) {
-            margin-bottom: 90px;
-        }
-        @media(min-width: $sm) {
-            margin-bottom: 105px;
+    @media(min-width: $md) {
+        margin-bottom: 65px;
+    }
+    .page-path {
+        .breadcrumb {
+            margin-bottom: 80px;
+            @media(min-width: $sm) {
+                margin-bottom: 70px;
+            }
+            @media(min-width: $md) {
+                margin-bottom: 130px;
+            }
         }
     }
     .sucess {
-        padding-top: 90px;
-        background-image: url(/assets/images/member/join_sucess_bg.gif);
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        h3 {
-            font-size: 20px;
+        text-align: center;
+        h2 {
+            font-size: 16px;
             color: #2b2b2b;
-            line-height: 28px;
-            text-align: center;
+            line-height: 24px;
             font-weight: 400;
-            margin-bottom: 20px;
-        }
-        > p {
-            font-size: 11px;
-            color: #666;
+            margin-bottom: 50px;
             text-align: center;
-            line-height: 20px;
+        }
+        dl {
+            overflow: hidden;
+            display: inline-block;
+            text-align: left;
+            dt {
+                float: left;
+                clear: both;
+                width: 80px;
+                font-size: 13px;
+                color: #666;
+                line-height: 24px;
+                font-weight: 300;
+            }
+            dd {
+                float: left;
+                font-size: 13px;
+                color: #666;
+                line-height: 24px;
+                font-weight: 300;
+            }
         }
         .btn-area {
-            margin-top: 60px;
+            margin-top: 40px;
             p {
                 .btn-lg {
-                    height: 40px;
-                    line-height: 38px;
+                    width: 260px;
                 }
             }
-        }
-        @media(min-width: $sm) {
-            padding-top: 100px;
-            h3 {
-                font-size: 23px;
-                line-height: 30px;
-                margin-bottom: 35px;
+            @media(min-width: $sm) {
+                margin-top: 45px;
+                p {
+                    .btn-lg {
+                        width: 370px;
+                    }
+                }
             }
-            > p {
-                font-size: 13px;
-                line-height: 22px;
-            }
-        }
-        @media(min-width: $md) {
-            h3 {
-                font-size: 24px;
-                line-height: 32px;
-                margin-bottom: 30px;
-            }
-            > p {
-                
-            }
-            .btn-area {
-                margin-top: 35px;
-                .btn-lg {
-                    width: 172px;
+            @media(min-width: $md) {
+                margin-top: 55px;
+                p {
+                    .btn-lg {
+                        width: 170px;
+                    }
                 }
             }
         }
@@ -469,36 +476,26 @@
 /* service privacy 공통 */
 .common-terms {
     .terms {
-        h3 {
+        h2 {
+            font-size: 12px;
+            color: #222;
+            font-weight: 400;
             margin-bottom: 20px;
-        }
-        .summary {
-            padding: 30px 10px;
-        }
-        @media(min-width: $sm) {
-            h3 {
+            @media(min-width: $sm) {
                 font-size: 14px;
             }
-            .summary {
-                padding: 25px 20px;
-            }
         }
-        @media(min-width: $md) {
-            .summary {
-                padding: 30px 20px;
-            }
-        }
-    }
-}
-.email-refusal {
-    .terms {
         .summary {
-            height: 300px;
+            overflow-y: scroll;
+            height: 350px;
+            font-size: 11px;
+            color: #666;
+            line-height: 20px;
+            padding: 30px 10px;
+            border: 1px solid #ddd;
+            background-color: #f4f4f4;
             @media(min-width: $sm) {
-                height: 190px;
-            }
-            @media(min-width: $md) {
-                height: 160px;
+                font-size: 13px;
             }
         }
     }

@@ -31,7 +31,6 @@
                     <div class="col-xs-12 col-lg-10">
                         <div class="page-header">
                             <h2>WHAT'S YOUR SIGN?</h2>
-                            <p class="font-lato">2016.01.01</p>
                         </div>
                         <article class="video-frame">
                             <div class="embed-responsive embed-responsive-16by9">
@@ -46,11 +45,6 @@
                                 t under this sign(December 21st – January 19th).
                             </div>
                         </article>
-                        <div class="btn-area">
-                            <p>
-                                <a href="/campaign/video_list.php" class="btn btn-white btn-lg" role="button">목록보기</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>

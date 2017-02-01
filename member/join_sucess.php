@@ -11,36 +11,22 @@
             <div class="page-path">
                 <ol class="breadcrumb">
                     <li><a href="/"><i class="icon-home"></i></a></li>
-                    <li class="active">JOIN</li>
+                    <li class="active">LOIN</li>
                 </ol>
             </div>
-            <div class="page-header">
-                <h2>JOIN</h2>
-                <p>회원가입하시면 폴휴먼의 다양한 혜택을 누리실 수 있습니다.</p>
-            </div>
-            <ol class="step-list">
-                <li>
-                    <p><img src="/assets/images/sub/step01_ico.png" alt="회원약관동의"></p>
-                    <h3><i>STEP 01</i>회원약관동의</h3>
-                </li>
-                <li>
-                    <p><img src="/assets/images/sub/step02_ico.png" alt="회원약관동의"></p>
-                    <h3><i>STEP 02</i>회원정보입력</h3>
-                </li>
-                <li class="active">
-                    <p><img src="/assets/images/sub/step03_ico_active.png" alt="회원약관동의"></p>
-                    <h3><i>STEP 03</i>가입완료</h3>
-                </li>
-            </ol>
             <div class="sucess">
-                <h3>환영합니다<br>폴휴먼 회원가입이 완료되었습니다.</h3>
-                <p>
-                    폴휴먼 회원이 되신 것을 진심으로 환영합니다.<br>
-                    폴휴먼의 다양하고 특별한 혜택을 누리실 수 있습니다.
-                </p>
+                <h2>환영합니다<br>폴휴먼 회원가입이 완료되었습니다.</h2>
+                <dl>
+                    <dt>ID</dt>
+                    <dd>honggildong</dd>
+                    <dt>NAME</dt>
+                    <dd>홍길동</dd>
+                    <dt>E-MAIL</dt>
+                    <dd>hong@naver.com</dd>
+                </dl>
                 <div class="btn-area">
                     <p>
-                        <a href="/" class="btn btn-lg btn-gray" role="button">메인 가기</a>
+                        <a href="/member/login.php" class="btn btn-lg btn-gray" role="button">로그인 하기</a>
                     </p>
                 </div>
             </div>

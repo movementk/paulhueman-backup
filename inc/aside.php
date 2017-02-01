@@ -4,9 +4,9 @@
         <div class="aside-head">
             <nav class="member">
                 <ul>
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">JOIN</a></li>
-                    <li><a href="#">MYPAGE</a></li>
+                    <li><a href="/member/login.php">LOGIN</a></li>
+                    <li><a href="/member/join.php">JOIN</a></li>
+                    <li><a href="/mypage/my_page.php">MYPAGE</a></li>
                 </ul>
             </nav>
         </div>

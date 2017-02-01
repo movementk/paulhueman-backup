@@ -30,124 +30,67 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-10">
-                        <div class="glasses-list">
+                        <div class="list">
                             <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses-item">
-                                        <a href="/campaign/video_view.php">
-                                            <figure>
-                                                <img src="/assets/images/campaign/video_img01.jpg" class="img-responsive" alt="">
-                                                <figcaption>
-                                                    What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
+                                <div class="col-xs-12">
+                                    <a href="/campaign/video_view.php">
+                                        <figure>
+                                            <img src="/assets/images/campaign/video_img01.jpg" class="img-responsive" alt="">
+                                            <figcaption>
+                                                What’s Your Sign?
+                                            </figcaption>
+                                        </figure>
+                                    </a>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses-item">
-                                        <a href="/campaign/video_view.php">
-                                            <figure>
-                                                <img src="/assets/images/campaign/video_img02.jpg" class="img-responsive" alt="">
-                                                <figcaption>
-                                                    What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
+                                <div class="col-xs-12">
+                                    <a href="/campaign/video_view.php">
+                                        <figure>
+                                            <img src="/assets/images/campaign/video_img02.jpg" class="img-responsive" alt="">
+                                            <figcaption>
+                                                What’s Your Sign?
+                                            </figcaption>
+                                        </figure>
+                                    </a>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses-item">
-                                        <a href="/campaign/video_view.php">
-                                            <figure>
-                                                <img src="/assets/images/campaign/video_img03.jpg" class="img-responsive" alt="">
-                                                <figcaption>
-                                                    What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
+                                <div class="col-xs-12">
+                                    <a href="/campaign/video_view.php">
+                                        <figure>
+                                            <img src="/assets/images/campaign/video_img03.jpg" class="img-responsive" alt="">
+                                            <figcaption>
+                                                What’s Your Sign?
+                                            </figcaption>
+                                        </figure>
+                                    </a>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses-item">
-                                        <a href="/campaign/video_view.php">
-                                            <figure>
-                                                <img src="/assets/images/campaign/video_img04.jpg" class="img-responsive" alt="">
-                                                <figcaption>
-                                                    What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
+                                <div class="col-xs-12">
+                                    <a href="/campaign/video_view.php">
+                                        <figure>
+                                            <img src="/assets/images/campaign/video_img04.jpg" class="img-responsive" alt="">
+                                            <figcaption>
+                                                What’s Your Sign?
+                                            </figcaption>
+                                        </figure>
+                                    </a>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="glasses-item">
-                                        <a href="/campaign/video_view.php">
-                                            <figure>
-                                                <img src="/assets/images/campaign/video_img05.jpg" class="img-responsive" alt="">
-                                                <figcaption>
-                                                    What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
+                                <div class="col-xs-12">
+                                    <a href="/campaign/video_view.php">
+                                        <figure>
+                                            <img src="/assets/images/campaign/video_img05.jpg" class="img-responsive" alt="">
+                                            <figcaption>
+                                                What’s Your Sign?
+                                            </figcaption>
+                                        </figure>
+                                    </a>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 none-sm">
-                                    <div class="glasses-item">
-                                        <a href="/campaign/video_view.php">
-                                            <figure>
-                                                <img src="/assets/images/campaign/video_img06.jpg" class="img-responsive" alt="">
-                                                <figcaption>
-                                                    What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 none-sm">
-                                    <div class="glasses-item">
-                                        <a href="/campaign/video_view.php">
-                                            <figure>
-                                                <img src="/assets/images/campaign/video_img07.jpg" class="img-responsive" alt="">
-                                                <figcaption>
-                                                    What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 none-sm">
-                                    <div class="glasses-item">
-                                        <a href="/campaign/video_view.php">
-                                            <figure>
-                                                <img src="/assets/images/campaign/video_img08.jpg" class="img-responsive" alt="">
-                                                <figcaption>
-                                                    What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 none-md">
-                                    <div class="glasses-item">
-                                        <a href="/campaign/video_view.php">
-                                            <figure>
-                                                <img src="/assets/images/campaign/video_img09.jpg" class="img-responsive" alt="">
-                                                <figcaption>
-                                                    What’s Your Sign?
-                                                    <p class="date">2016.01.01</p>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
+                                <div class="col-xs-12">
+                                    <a href="/campaign/video_view.php">
+                                        <figure>
+                                            <img src="/assets/images/campaign/video_img06.jpg" class="img-responsive" alt="">
+                                            <figcaption>
+                                                What’s Your Sign?
+                                            </figcaption>
+                                        </figure>
+                                    </a>
                                 </div>
                             </div>
                         </div>
