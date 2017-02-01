@@ -64,7 +64,7 @@
         <div class="container">
             <ul class="row">
                 <li class="col-sm-3 col-lg-2 col-lg-offset-2">
-                    <a href="#">STORY</a>
+                    <a href="/story/story.php">STORY</a>
                 </li>
                 <li class="col-sm-3 col-lg-2">
                     <a href="#">SHOP</a>

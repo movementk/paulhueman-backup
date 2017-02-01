@@ -16,8 +16,7 @@
                     <li>
                         <a href="#">STORY</a>
                         <ul>
-                            <li><a href="#">DIARY</a></li>
-                            <li><a href="#">VIDEO</a></li>
+                            <li><a href="/story/story.php">STORY</a></li>
                         </ul>
                     </li>
                     <li>
