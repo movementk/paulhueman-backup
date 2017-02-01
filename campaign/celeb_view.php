@@ -89,11 +89,6 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="btn-area">
-                            <p>
-                                <a href="/campaign/celeb_list.php" class="btn btn-white btn-lg" role="button">목록보기</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>

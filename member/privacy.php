@@ -15,7 +15,7 @@
                 </ol>
             </div>
             <div class="terms">
-                <h3>개인정보취급방침</h3>
+                <h2>개인정보취급방침</h2>
                 <div class="summary">
                     개인정보취급방침 노출영역
                 </div>

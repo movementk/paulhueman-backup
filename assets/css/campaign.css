@@ -38,19 +38,13 @@ address {
 /* list 공통 */
 @media (min-width: 768px) {
   .campaign-list .glasses-list .row > div:nth-of-type(2n + 1) {
-    clear: both;
-    padding-right: 52px; }
-  .campaign-list .glasses-list .row > div:nth-of-type(2n) {
-    padding-left: 52px; } }
+    clear: both; } }
 @media (min-width: 992px) {
   .campaign-list .glasses-list .row > div {
     padding-left: 10px;
     padding-right: 10px; }
     .campaign-list .glasses-list .row > div:nth-of-type(2n + 1) {
-      clear: none;
-      padding-right: 10px; }
-    .campaign-list .glasses-list .row > div:nth-of-type(2n) {
-      padding-left: 10px; }
+      clear: none; }
     .campaign-list .glasses-list .row > div:nth-of-type(3n + 1) {
       clear: both; } }
 .campaign-list .glasses-list .row > div.none-sm {
@@ -85,25 +79,26 @@ address {
       text-align: center;
       margin-top: 30px;
       font-family: 'Lato', sans-serif; }
-      .campaign-list .glasses-list .row > div .glasses-item a figure figcaption .date {
-        display: none;
-        font-weight: 600; }
-        @media (min-width: 768px) {
-          .campaign-list .glasses-list .row > div .glasses-item a figure figcaption .date {
-            display: block; } }
-        @media (min-width: 1280px) {
-          .campaign-list .glasses-list .row > div .glasses-item a figure figcaption .date {
-            display: none; } }
+
+/* diary-list */
+.diary-list figure figcaption {
+  font-weight: 600 !important; }
 
 /* celeb-list 추가 */
 .celeb-list figure figcaption {
   font-family: 'Noto Sans KR', sans-serif !important; }
-  .celeb-list figure figcaption .date {
-    font-family: 'Lato', sans-serif;
-    display: block !important; }
-    @media (min-width: 1280px) {
-      .celeb-list figure figcaption .date {
-        display: none !important; } }
+
+/* video-list */
+.video-list .campaign-list .list a {
+  display: block;
+  margin-bottom: 100px; }
+  .video-list .campaign-list .list a figure figcaption {
+    font-size: 12px;
+    color: #2b2b2b;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 35px;
+    font-family: 'Lato', sans-serif; }
 
 /* view 공통 */
 .campaign-view .details-img {
@@ -224,14 +219,6 @@ address {
     @media (min-width: 768px) {
       .campaign-view .product-aspect .product-feature p {
         font-size: 12px; } }
-.campaign-view .btn-area {
-  margin-top: 70px; }
-  @media (min-width: 768px) {
-    .campaign-view .btn-area {
-      margin-top: 90px; } }
-  @media (min-width: 1280px) {
-    .campaign-view .btn-area {
-      display: none; } }
 
 /* celeb-view 추가 */
 .celeb-view .product-aspect .product-img {
@@ -259,6 +246,7 @@ address {
       line-height: 25px; } }
 
 /* lookbook */
+/* 디자인 협의후 진행해야 함 */
 .lookbook .test-block {
   display: block;
   width: 100%;

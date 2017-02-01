@@ -15,7 +15,7 @@
                 </ol>
             </div>
             <div class="terms">
-                <h3>이용약관</h3>
+                <h2>이용약관</h2>
                 <div class="summary">
                     이용약관 노출영역
                 </div>

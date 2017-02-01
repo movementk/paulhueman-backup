@@ -31,14 +31,12 @@
                             </div>
                             <div class="col-xs-8 col-sm-9 col-lg-10">
                                 <input type="text" id="u-id" class="form-control">
-                                <p class="attention">4자 이상 입력해주세요.</p>
                             </div>
                             <div class="col-xs-4 col-sm-3 col-lg-2">
                                 <label for="u-pw" class="ootc">비밀번호</label>
                             </div>
                             <div class="col-xs-8 col-sm-9 col-lg-10">
                                 <input type="password" id="u-pw" class="form-control">
-                                <p class="attention">영문, 숫자 조합 8자 이상 입력해 주세요.</p>
                             </div>
                             <div class="col-xs-4 col-sm-3 col-lg-2">
                                 <label for="pw-confirm" class="ootc">비밀번호 확인</label>
@@ -51,7 +49,6 @@
                             </div>
                             <div class="col-xs-8 col-sm-9 col-lg-10">
                                 <input type="text" id="u-name" class="form-control u-name">
-                                <p class="attention">실명으로 입력해 주세요. (실명인증 이용시 자동입력)</p>
                             </div>
                             <div class="col-xs-4 col-sm-3 col-lg-2">
                                 <label for="u-email" class="ootc">이메일</label>
@@ -109,6 +106,9 @@
                             를 이용함에 있어 사이버 몰과 이용자의 권리?의무 및 책임사항
                             을 규정함을 목적으로 합니다.
                         </div>
+                        <div class="form-group">
+                            <label class="check"><input type="checkbox">이용약관에 동의합니다.</label>
+                        </div>
                     </div>
                     <div class="terms privacy-terms">
                         <h4>개인정보취급방침</h4>
@@ -117,11 +117,13 @@
                             를 이용함에 있어 사이버 몰과 이용자의 권리?의무 및 책임사항
                             을 규정함을 목적으로 합니다.
                         </div>
+                        <div class="form-group">
+                            <label class="check"><input type="checkbox">이용약관에 동의합니다.</label>
+                        </div>
                     </div>
                     <div class="btn-area">
                         <p>
-                            <a href="#" class="btn btn-sm btn-white" role="button">회원가입 취소</a>
-                            <button type="submit" class="btn btn-sm btn-gray">다음</button>
+                            <button type="submit" class="btn btn-lg btn-gray">회원 가입</button>
                         </p>
                     </div>
                 </form>

@@ -220,19 +220,6 @@
                     </div>
                 </div>
             </div>
-            <!-- terms -->
-            <div>
-                <h6 class="sub-title">이용약관 및 개인정보</h6>
-                <div class="terms">
-                    <h3>이용약관</h3>
-                    <div class="summary service">
-                        이용약관 노출영역
-                    </div>
-                    <div class="form-group">
-                        <label class="check"><input type="checkbox">이용약관에 동의합니다.</label>
-                    </div>
-                </div>
-            </div>
             
             <!-- nav-tabs -->
             <div style="margin: 50px 0;">
