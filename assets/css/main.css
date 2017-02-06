@@ -334,7 +334,7 @@ address {
               display: inline; }
           #social ul li a.blog .figure h5 {
             background-size: 18px auto; }
-          #social ul li a:hover, #social ul li a:focus {
+          #social ul li a:hover .details, #social ul li a:focus .details {
             text-decoration: underline; } }
 
 /*# sourceMappingURL=main.css.map */
